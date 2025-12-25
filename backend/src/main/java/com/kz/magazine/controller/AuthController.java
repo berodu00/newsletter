@@ -17,23 +17,34 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody Map<String, String> request) {
-        // Mock Login: Always success for now or simple check
-        String code = request.get("code");
+        String username = request.get("username");
+        String password = request.get("password"); // Mock check if needed
 
-        // Mock User
-        String token = jwtTokenProvider.createToken("user1", "USER");
-        String refreshToken = jwtTokenProvider.createToken("user1", "USER"); // Simplified refresh token
+        String role = "USER";
+        Long userId = 1L;
+        String name = "Hong GilDong";
+        String email = "hong@kz.com";
+
+        if ("admin".equals(username)) {
+            role = "ADMIN";
+            userId = 0L;
+            name = "System Admin";
+            email = "admin@kz.com";
+        }
+
+        String token = jwtTokenProvider.createToken(username, role);
+        String refreshToken = jwtTokenProvider.createToken(username, role);
 
         return ResponseEntity.ok(Map.of(
                 "accessToken", token,
                 "refreshToken", refreshToken,
                 "expiresIn", 3600,
                 "user", Map.of(
-                        "userId", 1,
-                        "username", "user1",
-                        "name", "Hong GilDong",
-                        "email", "hong@kz.com",
-                        "role", "USER")));
+                        "userId", userId,
+                        "username", username,
+                        "name", name,
+                        "email", email,
+                        "role", role)));
     }
 
     @PostMapping("/refresh")

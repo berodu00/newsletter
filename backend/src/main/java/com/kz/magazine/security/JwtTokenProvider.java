@@ -61,4 +61,8 @@ public class JwtTokenProvider {
     public String getUsername(String token) {
         return Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token).getBody().getSubject();
     }
+
+    public String getRole(String token) {
+        return (String) Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token).getBody().get("role");
+    }
 }

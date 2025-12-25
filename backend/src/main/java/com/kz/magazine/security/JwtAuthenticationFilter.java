@@ -27,11 +27,13 @@ public class JwtAuthenticationFilter extends GenericFilterBean {
 
         if (token != null && jwtTokenProvider.validateToken(token)) {
             String username = jwtTokenProvider.getUsername(token);
+            String role = jwtTokenProvider.getRole(token);
+
             // Mock UserDetails - in real app, load from DB
             UserDetails userDetails = User.builder()
                     .username(username)
                     .password("")
-                    .roles("USER") // Simplified
+                    .roles(role != null ? role : "USER")
                     .build();
 
             UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails,

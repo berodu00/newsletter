@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (username, password) => {
         // Mock login - password ignored for now
-        const response = await api.post('/api/auth/login', { code: 'mock-code', username });
+        const response = await api.post('/auth/login', { code: 'mock-code', username });
         const { accessToken, refreshToken, user: userData } = response.data;
 
         localStorage.setItem('accessToken', accessToken);
