@@ -217,11 +217,11 @@ P3refactor(social): YouTube API 연동 로직 개선
 **목표**: 사보 조회 및 관리자 CRUD 구현
 
 ### 2.1 Backend - 컨텐츠 Entity 및 Repository
-- [ ] `Content.java` Entity 작성
-- [ ] `Category.java` Entity 작성
-- [ ] `Hashtag.java` Entity 작성
-- [ ] `ContentHashtag.java` Entity 작성
-- [ ] JPA Repository 작성
+- [x] `Content.java` Entity 작성
+- [x] `Category.java` Entity 작성
+- [x] `Hashtag.java` Entity 작성
+- [x] `ContentHashtag.java` Entity 작성
+- [x] JPA Repository 작성
   - `ContentRepository.java`
   - `CategoryRepository.java`
   - `HashtagRepository.java`
@@ -239,17 +239,14 @@ P3refactor(social): YouTube API 연동 로직 개선
 - [ ] 컨텐츠 조회 테스트 작성
 
 ### 2.3 Backend - 컨텐츠 CRUD API (관리자)
-- [ ] `ContentController.java` - 등록
-  - `POST /api/contents`
-  - HTML Sanitization 적용
-- [ ] `ContentController.java` - 수정
-  - `PUT /api/contents/{id}`
-- [ ] `ContentController.java` - 삭제
-  - `DELETE /api/contents/{id}` (Soft Delete)
-- [ ] 트랜잭션 관리
-  - 해시태그 연결
-  - usage_count 증감
-- [ ] CRUD 테스트 작성
+- [x] `ContentController.java` - 등록 (`POST /api/contents`)
+  - [x] HTML Sanitization 적용 (Placeholder)
+- [x] `ContentController.java` - 수정 (`PUT /api/contents/{id}`)
+- [x] `ContentController.java` - 삭제 (`DELETE /api/contents/{id}`) (Soft Delete)
+- [x] 트랜잭션 관리
+  - [x] 해시태그 연결
+  - [x] usage_count 증감
+- [x] CRUD 테스트 작성
 
 ### 2.4 Backend - 파일 업로드 API
 - [ ] `FileController.java` 작성
