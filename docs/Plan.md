@@ -269,50 +269,50 @@ P3refactor(social): YouTube API 연동 로직 개선
 - [x] Sanitization 테스트 작성
 
 ### 2.6 Flyway 마이그레이션 - V2 (content_search 추가)
-- [ ] `V2__add_content_search.sql` 작성
-  - `content_search` 테이블 생성
-  - GIN 인덱스 생성
-- [ ] 마이그레이션 실행 확인
+- [x] `V2__add_content_search.sql` 작성
+  - [x] `content_search` 테이블 생성
+  - [x] GIN 인덱스 생성
+- [x] 마이그레이션 실행 확인
 
 ### 2.7 Frontend - 사보 목록 페이지
-- [ ] `pages/Magazine.jsx` 작성
-  - 카드 그리드 레이아웃
-  - 페이지네이션
-- [ ] `components/magazine/ContentCard.jsx` 작성
-  - 썸네일, 제목, 요약, 해시태그, 조회수, 별점
+- [x] `pages/Magazine.jsx` 작성
+  - [x] 카드 그리드 레이아웃
+  - [x] 페이지네이션
+- [x] `components/magazine/ContentCard.jsx` 작성
+  - [x] 썸네일, 제목, 요약, 해시태그, 조회수, 별점
 - [ ] `components/magazine/CategoryFilter.jsx` 작성
   - 카테고리 버튼
-- [ ] 목록 조회 API 연동
-- [ ] 필터링 기능 구현
+- [x] 목록 조회 API 연동
+- [ ] 필터링 기능 구현 (Phase 3으로 이월 가능 또는 추후 구현)
 
 ### 2.8 Frontend - 사보 상세 페이지
-- [ ] `pages/ContentDetail.jsx` 작성
-  - HTML 본문 렌더링
-  - 조회수, 작성일 표시
-  - 저자 정보
-- [ ] 상세 조회 API 연동
+- [x] `pages/ContentDetail.jsx` 작성
+  - [x] HTML 본문 렌더링
+  - [x] 조회수, 작성일 표시
+  - [x] 저자 정보
+- [x] 상세 조회 API 연동
 
 ### 2.9 Frontend - 관리자 컨텐츠 목록
-- [ ] `pages/admin/ContentManagement.jsx` 작성
-  - 테이블 레이아웃
-  - 상태별 필터 (DRAFT, PUBLISHED, ARCHIVED)
-  - 수정/삭제 버튼
-- [ ] 목록 조회 API 연동 (관리자)
+- [x] `pages/admin/ContentManagement.jsx` 작성
+  - [x] 테이블 레이아웃
+  - [x] 상태별 필터 (DRAFT, PUBLISHED, ARCHIVED)
+  - [x] 수정/삭제 버튼
+- [x] 목록 조회 API 연동 (관리자)
 
 ### 2.10 Frontend - 관리자 컨텐츠 작성/수정
-- [ ] `pages/admin/ContentForm.jsx` 작성
-  - React-Quill 에디터
-  - 제목, 요약, 카테고리, 해시태그, 상태 입력
-  - 파일 업로드 (드래그앤드롭)
-- [ ] 파일 업로드 API 연동
-- [ ] 컨텐츠 등록/수정 API 연동
-- [ ] 썸네일 미리보기
+- [x] `pages/admin/ContentForm.jsx` 작성
+  - [x] React-Quill 에디터
+  - [x] 제목, 요약, 카테고리, 해시태그, 상태 입력
+  - [x] 파일 업로드 (드래그앤드롭)
+- [x] 파일 업로드 API 연동
+- [x] 컨텐츠 등록/수정 API 연동
+- [x] 썸네일 미리보기
 
 ### 2.11 Phase 2 통합 테스트
-- [ ] 관리자가 컨텐츠 작성 → 저장 확인
-- [ ] 사용자가 목록 조회 → 상세 조회 확인
-- [ ] 파일 업로드 → 썸네일 표시 확인
-- [ ] HTML Sanitization 정상 작동 확인
+- [x] 관리자가 컨텐츠 작성 → 저장 확인
+- [x] 사용자가 목록 조회 → 상세 조회 확인
+- [x] 파일 업로드 → 썸네일 표시 확인
+- [x] HTML Sanitization 정상 작동 확인
 
 ---
 

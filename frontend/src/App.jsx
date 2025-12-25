@@ -2,6 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/common/Layout';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Magazine from './pages/Magazine';
+import ContentDetail from './pages/ContentDetail';
+import ContentManagement from './pages/admin/ContentManagement';
+import ContentForm from './pages/admin/ContentForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { AuthProvider } from './contexts/AuthContext';
@@ -17,8 +21,8 @@ function App() {
 
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="magazine" element={<div>Magazine List</div>} />
-            <Route path="magazine/:id" element={<div>Content Detail</div>} />
+            <Route path="magazine" element={<Magazine />} />
+            <Route path="magazine/:id" element={<ContentDetail />} />
             <Route path="social" element={<div>Social Content</div>} />
             <Route path="events" element={<div>Events</div>} />
             <Route path="ideas" element={<div>Ideas</div>} />
@@ -28,7 +32,9 @@ function App() {
           <Route element={<PrivateRoute roles={['ADMIN']} />}>
             <Route path="/admin" element={<Layout />}>
               <Route index element={<div>Admin Dashboard</div>} />
-              <Route path="contents" element={<div>Content Management</div>} />
+              <Route path="contents" element={<ContentManagement />} />
+              <Route path="contents/new" element={<ContentForm />} />
+              <Route path="contents/:id/edit" element={<ContentForm />} />
             </Route>
           </Route>
         </Routes>
