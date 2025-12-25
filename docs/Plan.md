@@ -249,23 +249,24 @@ P3refactor(social): YouTube API 연동 로직 개선
 - [x] CRUD 테스트 작성
 
 ### 2.4 Backend - 파일 업로드 API
-- [ ] `FileController.java` 작성
-  - `POST /api/files/upload`
-- [ ] `FileService.java` 작성
-  - UUID 파일명 생성
-  - MIME 타입 검증
-  - SHA256 계산
-  - 파일 저장 (`/uploads/YYYY/MM/`)
-- [ ] `ResourceFile.java` Entity 작성
-- [ ] 파일 업로드 테스트 작성
+- [x] `FileController.java` 작성
+  - [x] `POST /api/files/upload`
+  - [x] `MultipartFile` 처리
+- [x] `FileService.java` 작성
+  - [x] UUID 파일명 생성
+  - [x] MIME 타입 검증
+  - [x] SHA256 계산 (Placeholder)
+  - [x] 파일 저장 (`/uploads/YYYY/MM/`)
+- [x] `ResourceFile.java` Entity 작성
+- [x] 파일 업로드 테스트 작성
 
 ### 2.5 Backend - HTML Sanitization
-- [ ] OWASP Java HTML Sanitizer 의존성 추가
-- [ ] `HtmlSanitizer.java` Utility 작성
-  - 허용 태그/속성 화이트리스트
-  - iframe YouTube/Vimeo 검증
-- [ ] 컨텐츠 저장 시 Sanitization 적용
-- [ ] Sanitization 테스트 작성
+- [x] OWASP Java HTML Sanitizer 의존성 추가
+- [x] `HtmlSanitizerUtil.java` Utility 작성
+  - [x] 허용 태그/속성 화이트리스트
+  - [x] iframe YouTube/Vimeo 검증
+- [x] 컨텐츠 저장 시 Sanitization 적용
+- [x] Sanitization 테스트 작성
 
 ### 2.6 Flyway 마이그레이션 - V2 (content_search 추가)
 - [ ] `V2__add_content_search.sql` 작성

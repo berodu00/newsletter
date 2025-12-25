@@ -16,6 +16,7 @@ import com.kz.magazine.repository.ContentHashtagRepository;
 import com.kz.magazine.repository.ContentRepository;
 import com.kz.magazine.repository.HashtagRepository;
 import com.kz.magazine.repository.UserRepository;
+import com.kz.magazine.util.HtmlSanitizerUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -80,7 +81,8 @@ public class ContentService {
         Content content = new Content();
         content.setTitle(dto.getTitle());
         content.setSummary(dto.getSummary());
-        content.setBodyHtml(dto.getBodyHtml());
+        // Sanitize HTML body
+        content.setBodyHtml(HtmlSanitizerUtil.sanitize(dto.getBodyHtml()));
         content.setBodyText(dto.getBodyText());
         content.setCategory(category);
         content.setAuthor(author);
@@ -103,7 +105,7 @@ public class ContentService {
         if (dto.getSummary() != null)
             content.setSummary(dto.getSummary());
         if (dto.getBodyHtml() != null)
-            content.setBodyHtml(dto.getBodyHtml());
+            content.setBodyHtml(HtmlSanitizerUtil.sanitize(dto.getBodyHtml()));
         if (dto.getBodyText() != null)
             content.setBodyText(dto.getBodyText());
         if (dto.getStatus() != null)
