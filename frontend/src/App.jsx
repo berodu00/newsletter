@@ -6,17 +6,30 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { AuthProvider } from './contexts/AuthContext';
 
+import PrivateRoute from './components/common/PrivateRoute';
+
 function App() {
   return (
     <AuthProvider>
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
+
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="magazine" element={<div>Magazine List</div>} />
+            <Route path="magazine/:id" element={<div>Content Detail</div>} />
             <Route path="social" element={<div>Social Content</div>} />
             <Route path="events" element={<div>Events</div>} />
+            <Route path="ideas" element={<div>Ideas</div>} />
+          </Route>
+
+          {/* Admin Routes */}
+          <Route element={<PrivateRoute roles={['ADMIN']} />}>
+            <Route path="/admin" element={<Layout />}>
+              <Route index element={<div>Admin Dashboard</div>} />
+              <Route path="contents" element={<div>Content Management</div>} />
+            </Route>
           </Route>
         </Routes>
       </Router>
