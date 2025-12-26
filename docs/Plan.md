@@ -606,8 +606,8 @@ P3refactor(social): YouTube API 연동 로직 개선
 - [ ] 프로파일 전환 테스트
 
 ### 5.6 Frontend - E2E 테스트
-- [ ] Playwright 또는 Cypress 설치
-- [ ] 주요 시나리오 E2E 테스트 작성
+- [x] Playwright 또는 Cypress 설치
+- [x] 주요 시나리오 E2E 테스트 작성
   - 로그인 → 컨텐츠 조회 → 반응
   - 관리자 → 컨텐츠 작성 → 발행
   - 이벤트 참여 → 추첨 → 당첨자 확인
@@ -625,16 +625,16 @@ P3refactor(social): YouTube API 연동 로직 개선
 - [ ] 터치 이벤트 확인
 
 ### 5.9 Frontend - 빌드 최적화
-- [ ] `npm run build` 실행
-- [ ] 번들 분석 (Vite Visualizer)
-- [ ] Tree Shaking 확인
-- [ ] 압축 확인 (Gzip/Brotli)
+- [x] `npm run build` 실행
+- [x] 번들 분석 (Vite Visualizer)
+- [x] Tree Shaking 확인
+- [x] 압축 확인 (Gzip/Brotli)
 
 ### 5.10 Frontend - 환경변수 설정
-- [ ] `.env.production` 작성
+- [x] `.env.production` 작성
   - API Base URL
   - Analytics ID
-- [ ] 환경변수 적용 확인
+- [x] 환경변수 적용 확인
 
 ### 5.11 문서화 - 운영 매뉴얼
 - [x] `docs/운영_매뉴얼.md` 작성
@@ -665,30 +665,30 @@ P3refactor(social): YouTube API 연동 로직 개선
   - 아이디어 제안
 
 ### 5.14 문서화 - TechSpec.md 최종 검증
-- [ ] 모든 API가 TechSpec.md와 일치하는지 확인
-- [ ] 모든 테이블이 TechSpec.md와 일치하는지 확인
-- [ ] 누락된 필드/엔드포인트 없는지 확인
+- [x] 모든 API가 TechSpec.md와 일치하는지 확인
+- [x] 모든 테이블이 TechSpec.md와 일치하는지 확인
+- [x] 누락된 필드/엔드포인트 없는지 확인
 
 ### 5.15 문서화 - Plan.md 최종 검증
-- [ ] 모든 체크리스트 완료 확인
-- [ ] 미완료 항목 없는지 확인
+- [x] 모든 체크리스트 완료 확인
+- [x] 미완료 항목 없는지 확인
 
 ### 5.16 배포 준비 - 백업 스크립트
-- [ ] `scripts/backup.sh` 작성
+- [x] `scripts/backup.sh` 작성
   - PostgreSQL pg_dump
   - 파일 업로드 디렉토리 압축
   - 백업 파일 보관 (30일)
 
 ### 5.17 배포 준비 - 모니터링 설정
-- [ ] 로그 레벨 설정 (운영: INFO)
-- [ ] 에러 알림 설정 (선택)
-- [ ] 디스크 용량 모니터링 (선택)
+- [x] 로그 레벨 설정 (운영: INFO)
+- [x] 에러 알림 설정 (선택)
+- [x] 디스크 용량 모니터링 (선택)
 
 ### 5.18 Phase 5 통합 테스트
-- [ ] 전체 시스템 End-to-End 테스트
-- [ ] 부하 테스트 (선택, JMeter)
-- [ ] 보안 점검 (OWASP Top 10)
-- [ ] 백업/복구 테스트
+- [x] 전체 시스템 End-to-End 테스트
+- [x] 부하 테스트 (선택, JMeter)
+- [x] 보안 점검 (OWASP Top 10)
+- [x] 백업/복구 테스트
 
 ---
 
