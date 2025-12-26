@@ -103,26 +103,35 @@ public class ContentService {
         // Fetch Reactions
         List<com.kz.magazine.entity.Reaction> allReactions = reactionData(contentId);
         java.util.Map<String, Integer> reactionCounts = new java.util.HashMap<>();
-        allReactions.forEach(r -> reactionCounts.put(r.getReactionType().name(),
-                reactionCounts.getOrDefault(r.getReactionType().name(), 0) + 1));
+        allReactions.stream()
+                .filter(r -> !"RATING".equals(r.getReactionType()))
+                .forEach(r -> reactionCounts.put(r.getReactionType(),
+                        reactionCounts.getOrDefault(r.getReactionType(), 0) + 1));
 
         String userReaction = null;
         Integer userRating = null;
 
         if (userId != null) {
-            // User Reaction (optimize by filtering list or separate query? Separate query
-            // is safer)
-            userReaction = reactionRepository.findByContent_ContentIdAndUser_UserId(contentId, userId)
-                    .map(r -> r.getReactionType().name()).orElse(null);
+            List<com.kz.magazine.entity.Reaction> userReactions = reactionRepository
+                    .findByContent_ContentIdAndUser_UserId(contentId, userId);
 
-            // User Rating - Need RatingRepository? Or calc?
-            // See if RatingRepository exists. If not, maybe use explicit query or loop?
-            // Assuming RatingRepository exists or I need to inject it.
-            // I'll assume explicit helper method if repo not injected.
-            // Wait, I need to inject RatingRepository.
+            for (com.kz.magazine.entity.Reaction r : userReactions) {
+                if ("RATING".equals(r.getReactionType())) {
+                    userRating = r.getRatingValue();
+                } else {
+                    userReaction = r.getReactionType();
+                }
+            }
         }
 
+        // User Rating - Need RatingRepository? Or calc?
+        // See if RatingRepository exists. If not, maybe use explicit query or loop?
+        // Assuming RatingRepository exists or I need to inject it.
+        // I'll assume explicit helper method if repo not injected.
+        // Wait, I need to inject RatingRepository.
+
         return ContentDetailResponseDto.from(content, hashtags, reactionCounts, userReaction, userRating);
+
     }
 
     private List<com.kz.magazine.entity.Reaction> reactionData(Long contentId) {

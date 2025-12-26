@@ -35,4 +35,17 @@ public interface ContentRepository extends JpaRepository<Content, Long> {
         @Modifying
         @Query("UPDATE Content c SET c.viewCount = c.viewCount + 1 WHERE c.contentId = :contentId")
         void incrementViewCount(@Param("contentId") Long contentId);
+
+        // Top 10 by View Count
+        java.util.List<Content> findTop10ByStatusAndDeletedAtIsNullOrderByViewCountDesc(
+                        com.kz.magazine.entity.ContentStatus status);
+
+        // Top 10 by Rating
+        java.util.List<Content> findTop10ByStatusAndDeletedAtIsNullOrderByAverageRatingDesc(
+                        com.kz.magazine.entity.ContentStatus status);
+
+        @Query("SELECT new com.kz.magazine.dto.dashboard.CategoryStatDto(c.category.categoryName, COUNT(c)) " +
+                        "FROM Content c WHERE c.status = :status AND c.deletedAt IS NULL GROUP BY c.category.categoryName")
+        java.util.List<com.kz.magazine.dto.dashboard.CategoryStatDto> countContentsByCategory(
+                        @Param("status") com.kz.magazine.entity.ContentStatus status);
 }

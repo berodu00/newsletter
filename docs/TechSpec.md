@@ -787,18 +787,75 @@ OAuth 2.0 로그인
 }
 ```
 
-**Response (200)**:
-```json
-{
-  "winners": [
-    {
-      "userId": 12,
-      "name": "string",
-      "department": "string"
-    }
-  ],
   "message": "10명 추첨 완료"
 }
+```
+
+### 6.6 대시보드 API (관리자 전용)
+**공통**: `ROLE_ADMIN` 권한 필수
+
+#### GET /api/dashboard/top-views
+조회수 Top 10
+
+**Response (200)**: `ContentResponseDto` List
+
+#### GET /api/dashboard/top-ratings
+평점 Top 10
+
+**Response (200)**: `ContentResponseDto` List
+
+#### GET /api/dashboard/visitor-trend
+방문자 추이 (최근 7일)
+
+**Response (200)**:
+```json
+[
+  {
+    "date": "2025-01-01",
+    "pageViews": 150,
+    "visitorCount": 0
+  }
+]
+```
+
+#### GET /api/dashboard/category-stats
+카테고리별 컨텐츠 수
+
+**Response (200)**:
+```json
+[
+  {
+    "categoryName": "Special",
+    "count": 12
+  }
+]
+```
+
+#### GET /api/dashboard/reaction-stats
+반응(이모지) 통계
+
+**Response (200)**:
+```json
+[
+  {
+    "reactionType": "LIKE",
+    "count": 142
+  }
+]
+```
+
+#### GET /api/dashboard/hashtag-stats
+인기 해시태그 Top 10
+
+**Response (200)**:
+```json
+[
+  {
+    "hashtagName": "ESG",
+    "usageCount": 45
+  }
+]
+```}
 ```
 
 #### GET /api/events/{id}/winners

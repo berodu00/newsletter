@@ -454,17 +454,17 @@ P3refactor(social): YouTube API 연동 로직 개선
 **목표**: 관리자 대시보드 및 성능 개선
 
 ### 4.1 Backend - 대시보드 통계 API
-- [ ] `DashboardController.java` 작성
+- [x] `DashboardController.java` 작성
   - `GET /api/dashboard/top-views`
   - `GET /api/dashboard/top-ratings`
   - `GET /api/dashboard/visitor-trend`
   - `GET /api/dashboard/category-stats`
   - `GET /api/dashboard/hashtag-stats`
   - `GET /api/dashboard/reaction-stats`
-- [ ] `DashboardService.java` 작성
+- [x] `DashboardService.java` 작성
   - 각 통계 쿼리 작성
   - 최소 표본 필터 (별점 5개 이상)
-- [ ] 대시보드 테스트 작성
+- [x] 대시보드 테스트 작성
 
 ### 4.2 Backend - Full-Text Search 구현
 - [ ] `ContentService.java` 수정

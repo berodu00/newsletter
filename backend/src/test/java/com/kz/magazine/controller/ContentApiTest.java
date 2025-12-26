@@ -32,6 +32,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -105,7 +106,7 @@ class ContentApiTest {
                                 .instagramUrl("https://instagram.com/test")
                                 .build();
 
-                given(contentService.getContent(1L)).willReturn(dto);
+                given(contentService.getContent(eq(1L), any())).willReturn(dto);
 
                 // When & Then
                 mockMvc.perform(get("/api/contents/1")
