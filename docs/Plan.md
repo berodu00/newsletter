@@ -467,10 +467,11 @@ P3refactor(social): YouTube API 연동 로직 개선
 - [x] 대시보드 테스트 작성
 
 ### 4.2 Backend - Full-Text Search 구현
-- [ ] `ContentService.java` 수정
-  - 검색어 입력 시 `content_search` 테이블 활용
+- [x] `ContentService.java` 수정
+  - 검색어 입력 시 `content_search` 테이블 활용 (`GET /api/contents?q=...`)
   - `to_tsquery` 사용
-- [ ] 검색 성능 테스트 작성
+- [x] Search Index Migration 확인 (V2__add_content_search.sql)
+- [x] 검색 성능 테스트 작성 (SearchApiTest)
 
 ### 4.3 Backend - 해시태그 재집계 배치
 - [ ] `HashtagBatchService.java` 작성
