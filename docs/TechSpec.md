@@ -22,7 +22,7 @@
 ### 1.1 기본 정보
 - **프로젝트명**: 고려아연 전자사보 고도화 시스템
 - **버전**: v1.6
-- **작성일**: 2025-12-26 (Phase 5 Unit Tests & Docs Complete)
+- **작성일**: 2025-12-26 (Phase 5.3 Backend Integration Tests Complete)
 - **DBMS**: PostgreSQL 15+ (Port: 5433)
 - **마이그레이션**: Flyway (필수)
 
@@ -112,11 +112,15 @@ kz-magazine-platform/
 │   │   ├── application.yml
 │   │   └── db/migration/
 │   │       ├── V1__create_initial_schema.sql
-│   │       ├── V2__add_audit_logs.sql
-│   │       ├── V3__add_content_views_dedup.sql
-      ├── V4__add_reactions.sql
-      ├── V5__add_sns_columns.sql
-      └── V6__add_updated_by_to_events.sql
+│   │       ├── V2__add_content_search.sql
+│   │       ├── V3__add_dedup_and_audit.sql
+│   │       ├── V4__add_reactions.sql
+│   │       ├── V5__add_sns_columns.sql
+│   │       ├── V6__add_updated_by_to_events.sql
+│   │       ├── V8__add_daily_visit_log.sql
+│   │       ├── V9__update_visitor_log_schema.sql
+│   │       ├── V10__create_dept_stats.sql
+│   │       └── V11__add_user_deleted_at.sql
 │   └── build.gradle
 ├── frontend/
 │   ├── src/

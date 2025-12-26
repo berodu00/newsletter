@@ -227,16 +227,16 @@ P3refactor(social): YouTube API 연동 로직 개선
   - `HashtagRepository.java`
 
 ### 2.2 Backend - 컨텐츠 조회 API
-- [ ] `ContentController.java` - 목록 조회
+- [x] `ContentController.java` - 목록 조회
   - `GET /api/contents`
   - 페이징, 정렬, 필터링 (카테고리, 해시태그, 검색)
-- [ ] `ContentController.java` - 상세 조회
+- [x] `ContentController.java` - 상세 조회
   - `GET /api/contents/{id}`
   - 조회수 증가 로직 (dedup 제외, Phase 3에서 추가)
-- [ ] `ContentService.java` 작성
+- [x] `ContentService.java` 작성
   - 비즈니스 로직
   - DTO 변환
-- [ ] 컨텐츠 조회 테스트 작성
+- [x] 컨텐츠 조회 테스트 작성
 
 ### 2.3 Backend - 컨텐츠 CRUD API (관리자)
 - [x] `ContentController.java` - 등록 (`POST /api/contents`)
@@ -588,7 +588,7 @@ P3refactor(social): YouTube API 연동 로직 개선
 - [x] Mock 객체 활용
 
 ### 5.3 Backend - 통합 테스트
-- [ ] `@SpringBootTest` 통합 테스트 작성
+- [x] `@SpringBootTest` 통합 테스트 작성
   - 주요 시나리오 (로그인 → 컨텐츠 조회 → 반응/별점)
   - 관리자 시나리오 (CRUD → 추첨)
 
