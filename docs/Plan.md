@@ -583,9 +583,9 @@ P3refactor(social): YouTube API 연동 로직 개선
 - [ ] SSO 연동 테스트 작성
 
 ### 5.2 Backend - 단위 테스트 보강
-- [ ] 주요 Service 테스트 커버리지 80% 이상
-- [ ] 엣지 케이스 테스트 추가
-- [ ] Mock 객체 활용
+- [x] 주요 Service 테스트 커버리지 80% 이상
+- [x] 엣지 케이스 테스트 추가
+- [x] Mock 객체 활용
 
 ### 5.3 Backend - 통합 테스트
 - [ ] `@SpringBootTest` 통합 테스트 작성
@@ -593,9 +593,9 @@ P3refactor(social): YouTube API 연동 로직 개선
   - 관리자 시나리오 (CRUD → 추첨)
 
 ### 5.4 Backend - API 문서 생성
-- [ ] Swagger 의존성 추가
-- [ ] `@Operation`, `@ApiResponse` 어노테이션 추가
-- [ ] Swagger UI 확인 (`/swagger-ui.html`)
+- [x] Swagger 의존성 추가
+- [x] `@Operation`, `@ApiResponse` 어노테이션 추가
+- [x] Swagger UI 확인 (`/swagger-ui.html`)
 
 ### 5.5 Backend - 운영 환경 설정
 - [ ] `application-prod.yml` 작성
@@ -637,7 +637,7 @@ P3refactor(social): YouTube API 연동 로직 개선
 - [ ] 환경변수 적용 확인
 
 ### 5.11 문서화 - 운영 매뉴얼
-- [ ] `docs/운영_매뉴얼.md` 작성
+- [x] `docs/운영_매뉴얼.md` 작성
   - 관리자 기능 설명
   - 컨텐츠 작성 가이드
   - 이벤트 생성 가이드
@@ -646,7 +646,7 @@ P3refactor(social): YouTube API 연동 로직 개선
   - 통계 확인
 
 ### 5.12 문서화 - 배포 가이드
-- [ ] `docs/배포_가이드.md` 작성
+- [x] `docs/배포_가이드.md` 작성
   - 서버 요구사항
   - PostgreSQL 설치
   - 환경변수 설정
@@ -657,7 +657,7 @@ P3refactor(social): YouTube API 연동 로직 개선
   - 백업 스크립트
 
 ### 5.13 문서화 - 사용자 가이드
-- [ ] `docs/사용자_가이드.md` 작성
+- [x] `docs/사용자_가이드.md` 작성
   - 로그인 방법
   - 사보 조회
   - 반응/별점 부여
@@ -720,6 +720,6 @@ P3refactor(social): YouTube API 연동 로직 개선
 
 ---
 
-**문서 버전**: v1.2  
+**문서 버전**: v1.3  
 **최종 수정일**: 2025-12-26  
 **작성자**: Claude (Anthropic)

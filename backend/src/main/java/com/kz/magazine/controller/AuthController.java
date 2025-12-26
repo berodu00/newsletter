@@ -14,23 +14,40 @@ import java.util.Map;
 public class AuthController {
 
     private final JwtTokenProvider jwtTokenProvider;
+    private final com.kz.magazine.repository.UserRepository userRepository;
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody Map<String, String> request) {
         String username = request.get("username");
-        String password = request.get("password"); // Mock check if needed
+        // String password = request.get("password"); // Mock check if needed
 
         String role = "USER";
-        Long userId = 1L;
         String name = "Hong GilDong";
         String email = "hong@kz.com";
+        String department = "HR";
 
         if ("admin".equals(username)) {
             role = "ADMIN";
-            userId = 0L;
             name = "System Admin";
             email = "admin@kz.com";
+            department = "IT";
         }
+
+        String finalRole = role;
+        String finalName = name;
+        String finalEmail = email;
+        String finalDepartment = department;
+
+        // Sync to DB
+        com.kz.magazine.entity.User user = userRepository.findByUsername(username)
+                .orElseGet(() -> userRepository.save(com.kz.magazine.entity.User.builder()
+                        .username(username)
+                        .name(finalName)
+                        .email(finalEmail)
+                        .role(finalRole)
+                        .department(finalDepartment)
+                        .isActive(true)
+                        .build()));
 
         String token = jwtTokenProvider.createToken(username, role);
         String refreshToken = jwtTokenProvider.createToken(username, role);
@@ -40,11 +57,11 @@ public class AuthController {
                 "refreshToken", refreshToken,
                 "expiresIn", 3600,
                 "user", Map.of(
-                        "userId", userId,
-                        "username", username,
-                        "name", name,
-                        "email", email,
-                        "role", role)));
+                        "userId", user.getUserId(),
+                        "username", user.getUsername(),
+                        "name", user.getName(),
+                        "email", email, // potentially null in DB if not set, but we set it above
+                        "role", user.getRole())));
     }
 
     @PostMapping("/refresh")

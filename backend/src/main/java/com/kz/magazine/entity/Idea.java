@@ -33,6 +33,7 @@ public class Idea {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 20)
+    @Builder.Default
     private IdeaStatus status = IdeaStatus.PENDING;
 
     @Column(name = "admin_comment", columnDefinition = "TEXT")
