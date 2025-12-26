@@ -48,4 +48,16 @@ public interface ContentRepository extends JpaRepository<Content, Long> {
                         "FROM Content c WHERE c.status = :status AND c.deletedAt IS NULL GROUP BY c.category.categoryName")
         java.util.List<com.kz.magazine.dto.dashboard.CategoryStatDto> countContentsByCategory(
                         @Param("status") com.kz.magazine.entity.ContentStatus status);
+
+        // Full-Text Search
+        @Query(value = "SELECT c.* FROM contents c " +
+                        "JOIN content_search cs ON c.content_id = cs.content_id " +
+                        "WHERE cs.search_vector @@ to_tsquery('simple', :keyword) " +
+                        "AND c.status = :status AND c.deleted_at IS NULL", countQuery = "SELECT count(*) FROM contents c "
+                                        +
+                                        "JOIN content_search cs ON c.content_id = cs.content_id " +
+                                        "WHERE cs.search_vector @@ to_tsquery('simple', :keyword) " +
+                                        "AND c.status = :status AND c.deleted_at IS NULL", nativeQuery = true)
+        Page<Content> searchContents(@Param("keyword") String keyword, @Param("status") String status,
+                        Pageable pageable);
 }

@@ -48,7 +48,14 @@ public class ContentService {
         Page<Content> contents;
 
         // Simple filtering strategy
-        if (filter.getCategory() != null && !filter.getCategory().isEmpty()) {
+        if (filter.getQ() != null && !filter.getQ().trim().isEmpty()) {
+            // Full-text search
+            // Prepare keyword: standard to_tsquery format (e.g., 'word1 | word2' or 'word1
+            // & word2')
+            // For simplicity, we join with & for AND search
+            String keyword = filter.getQ().trim().replaceAll("\\s+", " & ");
+            contents = contentRepository.searchContents(keyword, filter.getStatus(), pageable);
+        } else if (filter.getCategory() != null && !filter.getCategory().isEmpty()) {
             contents = contentRepository.findByCategory_CategoryNameAndStatusAndDeletedAtIsNull(
                     filter.getCategory(), filter.getStatus(), pageable);
         } else if (Boolean.TRUE.equals(filter.getHasYoutubeUrl())) {

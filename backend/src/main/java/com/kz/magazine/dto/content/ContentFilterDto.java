@@ -10,7 +10,7 @@ import lombok.Setter;
 public class ContentFilterDto {
     private String category;
     private String hashtag;
-    private String search;
+    private String q;
     private String status = "PUBLISHED";
     private Boolean hasYoutubeUrl;
     private Boolean hasInstagramUrl;
