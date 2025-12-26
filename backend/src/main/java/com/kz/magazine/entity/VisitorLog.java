@@ -5,12 +5,14 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "visitor_logs", uniqueConstraints = @UniqueConstraint(columnNames = { "user_id", "visited_at" }))
+@Table(name = "visitor_logs")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -20,17 +22,14 @@ public class VisitorLog {
     @Column(name = "log_id")
     private Long logId;
 
-    @Column(name = "user_id")
-    private Long userId; // Nullable for anonymous if needed, but schema says REFERENCES users
-
-    @Column(name = "visited_at", nullable = false)
+    @Column(name = "visited_at", nullable = false, unique = true)
     private LocalDate visitedAt;
 
-    @Builder.Default
     @Column(name = "page_views")
-    private Integer pageViews = 1;
+    @Builder.Default
+    private Long pageViews = 0L; // Changed to Long
 
-    public void incrementPageViews() {
-        this.pageViews++;
-    }
+    @Column(name = "visitor_count")
+    @Builder.Default
+    private Long visitorCount = 0L;
 }

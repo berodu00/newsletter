@@ -474,42 +474,43 @@ P3refactor(social): YouTube API 연동 로직 개선
 - [x] 검색 성능 테스트 작성 (SearchApiTest)
 
 ### 4.3 Backend - 해시태그 재집계 배치
-- [ ] `HashtagBatchService.java` 작성
+- [x] `HashtagBatchService.java` 작성
   - `content_hashtags` 기준 재집계
   - `@Scheduled` 설정 (매일 새벽 3시)
-- [ ] 재집계 테스트 작성
+- [x] 재집계 테스트 작성
 
 ### 4.4 Backend - 방문자 로그 배치
-- [ ] `VisitorLogService.java` 작성
+- [x] `VisitorLogService.java` 작성
   - 일일 방문자 집계
   - `visitor_logs` INSERT (Upsert)
   - `@Scheduled` 설정 (매일 자정)
-- [ ] 방문자 로그 테스트 작성
+- [x] 방문자 로그 테스트 작성
 
 ### 4.5 Backend - 아이디어 제안 API
-- [ ] `Idea.java` Entity 작성
-- [ ] `IdeaController.java` 작성
+- [x] `Idea.java` Entity 작성
+- [x] `IdeaController.java` 작성
   - `GET /api/ideas` (본인 제안, 관리자 전체)
   - `POST /api/ideas`
   - `PUT /api/ideas/{id}/review` (관리자)
-- [ ] `IdeaService.java` 작성
-- [ ] 아이디어 제안 테스트 작성
+- [x] `IdeaService.java` 작성
+- [x] 아이디어 제안 테스트 작성
 
 ### 4.6 Backend - 팝업 CRUD API
-- [ ] `Popup.java` Entity 작성
-- [ ] `PopupController.java` 작성
+- [x] `Popup.java` Entity 작성
+- [x] `PopupController.java` 작성
   - `GET /api/popups` (활성 팝업)
   - `POST /api/popups` (관리자)
   - `PUT /api/popups/{id}` (관리자)
   - `DELETE /api/popups/{id}` (관리자)
-- [ ] `PopupService.java` 작성
-- [ ] 팝업 CRUD 테스트 작성
+- [x] `PopupService.java` 작성
+- [x] 팝업 CRUD 테스트 작성
 
-### 4.7 Backend - 쿼리 성능 튜닝
-- [ ] 주요 쿼리 `EXPLAIN ANALYZE` 실행
-- [ ] 인덱스 최적화 확인
-- [ ] N+1 쿼리 제거 (Fetch Join)
-- [ ] 성능 테스트 작성
+### 4.7 Backend - 부서별 통계 배치 (Dept Stats Batch)
+- [x] `DeptStats.java` Entity 작성
+- [x] `DeptStatsService.java` 작성
+  - 부서별 인원/컨텐츠/조회수 집계
+  - `@Scheduled` 설정 (매일 새벽 1시)
+- [x] 통계 배치 테스트 작성
 
 ### 4.8 Frontend - 관리자 대시보드
 - [ ] `pages/admin/Dashboard.jsx` 작성

@@ -48,7 +48,7 @@ public class DashboardService {
         java.time.LocalDate startDate = java.time.LocalDate.now().minusDays(days);
         return visitorLogRepository.findVisitorTrend(startDate)
                 .stream()
-                .map(v -> new VisitorTrendDto(v.getVisitedAt(), v.getPageViews(), null))
+                .map(v -> new VisitorTrendDto(v.getVisitedAt(), v.getPageViews().longValue(), v.getVisitorCount()))
                 .toList();
     }
 

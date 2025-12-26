@@ -60,4 +60,7 @@ public interface ContentRepository extends JpaRepository<Content, Long> {
                                         "AND c.status = :status AND c.deleted_at IS NULL", nativeQuery = true)
         Page<Content> searchContents(@Param("keyword") String keyword, @Param("status") String status,
                         Pageable pageable);
+
+        @Query("SELECT count(c), sum(c.viewCount) FROM Content c JOIN c.author u WHERE u.department = :department AND c.status = com.kz.magazine.entity.ContentStatus.PUBLISHED AND c.deletedAt IS NULL")
+        Object[] getStatsByDepartment(@Param("department") String department);
 }

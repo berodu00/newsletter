@@ -13,6 +13,6 @@ import java.time.LocalDate;
 @AllArgsConstructor
 public class VisitorTrendDto {
     private LocalDate date;
-    private Integer pageViews;
-    private Integer visitorCount; // Optional if we track unique users per day
+    private Long pageViews;
+    private Long visitorCount; // Optional if we track unique users per day
 }
