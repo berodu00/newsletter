@@ -1,0 +1,29 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+
+> Task :compileTestJava FAILED
+D:\berodu\SORIN\project\Newsletter\backend\src\test\java\com\kz\magazine\controller\ContentApiTest.java:56: error: cannot find symbol
+        private ContentViewService contentViewService;
+                ^
+  symbol:   class ContentViewService
+  location: class ContentApiTest
+D:\berodu\SORIN\project\Newsletter\backend\src\test\java\com\kz\magazine\controller\ContentApiTest.java:59: error: cannot find symbol
+        private UserRepository userRepository;
+                ^
+  symbol:   class UserRepository
+  location: class ContentApiTest
+2 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileTestJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 5s
+3 actionable tasks: 1 executed, 2 up-to-date

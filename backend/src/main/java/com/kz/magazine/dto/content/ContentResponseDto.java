@@ -31,7 +31,7 @@ public class ContentResponseDto {
                                                                                                                     // Full
                                                                                                                     // URL?
                 .categoryName(content.getCategory().getCategoryName())
-                .status(content.getStatus())
+                .status(content.getStatus().name())
                 .authorName(content.getAuthor().getName())
                 .publishedAt(content.getPublishedAt())
                 .viewCount(content.getViewCount())

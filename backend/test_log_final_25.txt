@@ -1,0 +1,740 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+EventApiTest STANDARD_OUT
+    10:00:23.487 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.kz.magazine.controller.EventApiTest]: EventApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    10:00:23.697 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.controller.EventApiTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T10:00:24.578+09:00  INFO 30772 --- [    Test worker] c.kz.magazine.controller.EventApiTest    : Starting EventApiTest using Java 17.0.13 with PID 30772 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T10:00:24.580+09:00  INFO 30772 --- [    Test worker] c.kz.magazine.controller.EventApiTest    : The following 1 profile is active: "test"
+    2025-12-26T10:00:26.294+09:00  INFO 30772 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2025-12-26T10:00:26.461+09:00  INFO 30772 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 10 JPA repository interfaces.
+    2025-12-26T10:00:27.875+09:00  INFO 30772 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+    2025-12-26T10:00:28.349+09:00  INFO 30772 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74c121d4
+    2025-12-26T10:00:28.352+09:00  INFO 30772 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+    2025-12-26T10:00:28.532+09:00  INFO 30772 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+    2025-12-26T10:00:28.532+09:00  INFO 30772 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+    2025-12-26T10:00:28.532+09:00  INFO 30772 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
+    2025-12-26T10:00:28.579+09:00  INFO 30772 --- [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/kz_magazine (PostgreSQL 15.15)
+    2025-12-26T10:00:28.912+09:00  INFO 30772 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 6
+    2025-12-26T10:00:28.922+09:00  INFO 30772 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+    2025-12-26T10:00:29.137+09:00  INFO 30772 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2025-12-26T10:00:29.295+09:00  INFO 30772 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+    2025-12-26T10:00:29.382+09:00  INFO 30772 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+    2025-12-26T10:00:30.018+09:00  INFO 30772 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2025-12-26T10:00:31.858+09:00  INFO 30772 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    2025-12-26T10:00:31.862+09:00  INFO 30772 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2025-12-26T10:00:32.499+09:00  INFO 30772 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+    2025-12-26T10:00:34.060+09:00  WARN 30772 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+    2025-12-26T10:00:34.105+09:00  WARN 30772 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+    Using generated security password: ae9e0c6c-748d-42fd-810f-e04cfa93861a
+
+    This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+    2025-12-26T10:00:34.823+09:00  INFO 30772 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7f3aa737, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1428d63, org.springframework.security.web.context.SecurityContextHolderFilter@533d28aa, org.springframework.security.web.header.HeaderWriterFilter@545bc8e1, org.springframework.web.filter.CorsFilter@34bcdc9f, org.springframework.security.web.authentication.logout.LogoutFilter@20de9df, com.kz.magazine.security.JwtAuthenticationFilter@76296c86, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c97e3d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@672c6b93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c807e6b, org.springframework.security.web.session.SessionManagementFilter@72a4f3f, org.springframework.security.web.access.ExceptionTranslationFilter@6dbfd081, org.springframework.security.web.access.intercept.AuthorizationFilter@2b1aa390]
+    2025-12-26T10:00:35.703+09:00  INFO 30772 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2025-12-26T10:00:35.703+09:00  INFO 30772 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2025-12-26T10:00:35.705+09:00  INFO 30772 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+    2025-12-26T10:00:35.790+09:00  INFO 30772 --- [    Test worker] c.kz.magazine.controller.EventApiTest    : Started EventApiTest in 11.886 seconds (process running for 13.88)
+
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :test
+
+EventApiTest > Admin can create event STANDARD_OUT
+    2025-12-26T10:00:36.896+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            ep1_0.participant_id,
+            ep1_0.comment,
+            ep1_0.event_id,
+            ep1_0.is_winner,
+            ep1_0.participated_at,
+            ep1_0.user_id 
+        from
+            event_participants ep1_0
+    2025-12-26T10:00:36.905+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            e1_0.event_id,
+            e1_0.created_at,
+            e1_0.created_by,
+            e1_0.deleted_at,
+            e1_0.deleted_by,
+            e1_0.description,
+            e1_0.end_at,
+            e1_0.start_at,
+            e1_0.status,
+            e1_0.thumbnail_file_id,
+            e1_0.title,
+            e1_0.updated_at,
+            e1_0.updated_by 
+        from
+            events e1_0
+    2025-12-26T10:00:36.929+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    2025-12-26T10:00:36.959+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    2025-12-26T10:00:37.093+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    2025-12-26T10:00:37.190+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        insert 
+        into
+            events
+            (created_at, created_by, deleted_at, deleted_by, description, end_at, start_at, status, thumbnail_file_id, title, updated_at, updated_by) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    2025-12-26T10:00:37.219+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    2025-12-26T10:00:37.246+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        insert 
+        into
+            audit_logs
+            (action, actor_user_id, after_json, before_json, created_at, entity_id, entity_type) 
+        values
+            (?, ?, ?, ?, ?, ?, ?)
+
+    MockHttpServletRequest:
+          HTTP Method = POST
+          Request URI = /api/events
+           Parameters = {}
+              Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"131"]
+                 Body = {"description":"Description","startAt":"2025-12-27T10:00:36.967557800","endAt":"2025-12-31T10:00:36.967557800","title":"New Event"}
+        Session Attrs = {}
+
+    Handler:
+                 Type = com.kz.magazine.controller.EventController
+               Method = com.kz.magazine.controller.EventController#createEvent(Map, UserDetails)
+
+    Async:
+        Async started = false
+         Async result = null
+
+    Resolved Exception:
+                 Type = null
+
+    ModelAndView:
+            View name = null
+                 View = null
+                Model = null
+
+    FlashMap:
+           Attributes = null
+
+    MockHttpServletResponse:
+               Status = 200
+        Error message = null
+              Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+         Content type = application/json
+                 Body = {"id":1,"title":"New Event","description":"Description","thumbnailFile":null,"startAt":"2025-12-27T10:00:36.9675578","endAt":"2025-12-31T10:00:36.9675578","status":"ACTIVE","createdAt":"2025-12-26T10:00:37.18404","createdBy":1,"updatedAt":"2025-12-26T10:00:37.18404","updatedBy":1,"deletedAt":null,"deletedBy":null}
+        Forwarded URL = null
+       Redirected URL = null
+              Cookies = []
+
+EventApiTest > Admin can create event PASSED
+
+EventApiTest > Admin can draw winners STANDARD_OUT
+    2025-12-26T10:00:37.413+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            ep1_0.participant_id,
+            ep1_0.comment,
+            ep1_0.event_id,
+            ep1_0.is_winner,
+            ep1_0.participated_at,
+            ep1_0.user_id 
+        from
+            event_participants ep1_0
+    2025-12-26T10:00:37.425+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            e1_0.event_id,
+            e1_0.created_at,
+            e1_0.created_by,
+            e1_0.deleted_at,
+            e1_0.deleted_by,
+            e1_0.description,
+            e1_0.end_at,
+            e1_0.start_at,
+            e1_0.status,
+            e1_0.thumbnail_file_id,
+            e1_0.title,
+            e1_0.updated_at,
+            e1_0.updated_by 
+        from
+            events e1_0
+    2025-12-26T10:00:37.431+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    2025-12-26T10:00:37.446+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    2025-12-26T10:00:37.455+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    2025-12-26T10:00:37.477+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        insert 
+        into
+            users
+            (created_at, created_by, department, email, is_active, name, role, updated_at, updated_by, username) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    2025-12-26T10:00:37.493+09:00  WARN 30772 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+    2025-12-26T10:00:37.493+09:00 ERROR 30772 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "users_username_key"
+      Detail: Key (username)=(user2) already exists.
+
+EventApiTest > Admin can draw winners FAILED
+    org.springframework.dao.DataIntegrityViolationException at EventApiTest.java:130
+        Caused by: org.hibernate.exception.ConstraintViolationException at EventApiTest.java:130
+            Caused by: org.postgresql.util.PSQLException at EventApiTest.java:130
+
+EventApiTest > User can participate in event STANDARD_OUT
+    2025-12-26T10:00:37.517+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            ep1_0.participant_id,
+            ep1_0.comment,
+            ep1_0.event_id,
+            ep1_0.is_winner,
+            ep1_0.participated_at,
+            ep1_0.user_id 
+        from
+            event_participants ep1_0
+    2025-12-26T10:00:37.524+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            e1_0.event_id,
+            e1_0.created_at,
+            e1_0.created_by,
+            e1_0.deleted_at,
+            e1_0.deleted_by,
+            e1_0.description,
+            e1_0.end_at,
+            e1_0.start_at,
+            e1_0.status,
+            e1_0.thumbnail_file_id,
+            e1_0.title,
+            e1_0.updated_at,
+            e1_0.updated_by 
+        from
+            events e1_0
+    2025-12-26T10:00:37.532+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    2025-12-26T10:00:37.543+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    2025-12-26T10:00:37.547+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        insert 
+        into
+            events
+            (created_at, created_by, deleted_at, deleted_by, description, end_at, start_at, status, thumbnail_file_id, title, updated_at, updated_by) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    2025-12-26T10:00:37.556+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    2025-12-26T10:00:37.574+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            e1_0.event_id,
+            e1_0.created_at,
+            e1_0.created_by,
+            e1_0.deleted_at,
+            e1_0.deleted_by,
+            e1_0.description,
+            e1_0.end_at,
+            e1_0.start_at,
+            e1_0.status,
+            e1_0.thumbnail_file_id,
+            e1_0.title,
+            e1_0.updated_at,
+            e1_0.updated_by 
+        from
+            events e1_0 
+        where
+            e1_0.event_id=? 
+            and e1_0.deleted_at is null
+    2025-12-26T10:00:37.596+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            ep1_0.participant_id 
+        from
+            event_participants ep1_0 
+        left join
+            users u1_0 
+                on u1_0.user_id=ep1_0.user_id 
+        where
+            ep1_0.event_id=? 
+            and u1_0.username=? 
+        fetch
+            first ? rows only
+    2025-12-26T10:00:37.612+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        insert 
+        into
+            event_participants
+            (comment, event_id, is_winner, participated_at, user_id) 
+        values
+            (?, ?, ?, ?, ?)
+
+    MockHttpServletRequest:
+          HTTP Method = POST
+          Request URI = /api/events/2/participate
+           Parameters = {}
+              Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"31"]
+                 Body = {"comment":"I want to verify!"}
+        Session Attrs = {}
+
+    Handler:
+                 Type = com.kz.magazine.controller.EventController
+               Method = com.kz.magazine.controller.EventController#participate(Long, Map, UserDetails)
+
+    Async:
+        Async started = false
+         Async result = null
+
+    Resolved Exception:
+                 Type = null
+
+    ModelAndView:
+            View name = null
+                 View = null
+                Model = null
+
+    FlashMap:
+           Attributes = null
+
+    MockHttpServletResponse:
+               Status = 200
+        Error message = null
+              Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+         Content type = null
+                 Body = 
+        Forwarded URL = null
+       Redirected URL = null
+              Cookies = []
+
+EventApiTest > User can participate in event PASSED
+
+MagazineApplicationTests STANDARD_OUT
+    2025-12-26T10:00:37.651+09:00  INFO 30772 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kz.magazine.MagazineApplicationTests]: MagazineApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-12-26T10:00:37.658+09:00  INFO 30772 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.MagazineApplicationTests
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T10:00:37.703+09:00  INFO 30772 --- [    Test worker] c.kz.magazine.MagazineApplicationTests   : Starting MagazineApplicationTests using Java 17.0.13 with PID 30772 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T10:00:37.704+09:00  INFO 30772 --- [    Test worker] c.kz.magazine.MagazineApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+    2025-12-26T10:00:38.440+09:00  INFO 30772 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2025-12-26T10:00:38.480+09:00  INFO 30772 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 10 JPA repository interfaces.
+    2025-12-26T10:00:38.693+09:00  INFO 30772 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+    2025-12-26T10:00:38.776+09:00  INFO 30772 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@49854d93
+    2025-12-26T10:00:38.777+09:00  INFO 30772 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+    2025-12-26T10:00:38.796+09:00  INFO 30772 --- [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/kz_magazine (PostgreSQL 15.15)
+    2025-12-26T10:00:38.995+09:00  INFO 30772 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 6
+    2025-12-26T10:00:39.009+09:00  INFO 30772 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+    2025-12-26T10:00:39.053+09:00  INFO 30772 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2025-12-26T10:00:39.072+09:00  INFO 30772 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+    2025-12-26T10:00:39.108+09:00  INFO 30772 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2025-12-26T10:00:39.513+09:00  INFO 30772 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    2025-12-26T10:00:39.513+09:00  INFO 30772 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2025-12-26T10:00:39.962+09:00  WARN 30772 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+    2025-12-26T10:00:39.974+09:00  WARN 30772 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+    Using generated security password: b72deffe-f122-400e-afa3-d685f54215b6
+
+    This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+    2025-12-26T10:00:40.129+09:00  INFO 30772 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@28790ede, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31d07dd9, org.springframework.security.web.context.SecurityContextHolderFilter@75f27234, org.springframework.security.web.header.HeaderWriterFilter@754c6edb, org.springframework.web.filter.CorsFilter@568c71de, org.springframework.security.web.authentication.logout.LogoutFilter@882364e, com.kz.magazine.security.JwtAuthenticationFilter@548c7eab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40d2a644, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56fe2233, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3463851a, org.springframework.security.web.session.SessionManagementFilter@4a9e4be7, org.springframework.security.web.access.ExceptionTranslationFilter@7b29d791, org.springframework.security.web.access.intercept.AuthorizationFilter@7aff1fa3]
+    2025-12-26T10:00:40.277+09:00  INFO 30772 --- [    Test worker] c.kz.magazine.MagazineApplicationTests   : Started MagazineApplicationTests in 2.61 seconds (process running for 18.366)
+
+MagazineApplicationTests > contextLoads() PASSED
+
+ContentApiTest STANDARD_OUT
+    2025-12-26T10:00:40.295+09:00  INFO 30772 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kz.magazine.controller.ContentApiTest]: ContentApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-12-26T10:00:40.313+09:00  INFO 30772 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.controller.ContentApiTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T10:00:40.363+09:00  INFO 30772 --- [    Test worker] c.kz.magazine.controller.ContentApiTest  : Starting ContentApiTest using Java 17.0.13 with PID 30772 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T10:00:40.363+09:00  INFO 30772 --- [    Test worker] c.kz.magazine.controller.ContentApiTest  : No active profile set, falling back to 1 default profile: "default"
+    2025-12-26T10:00:42.757+09:00  WARN 30772 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+    Using generated security password: ab372cf9-1ed1-4dd5-9c19-9efccebb84d7
+
+    This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+    2025-12-26T10:00:42.836+09:00  INFO 30772 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@129e6f3a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f1179e7, org.springframework.security.web.context.SecurityContextHolderFilter@6534f871, org.springframework.security.web.header.HeaderWriterFilter@37b98741, org.springframework.web.filter.CorsFilter@591f5945, org.springframework.security.web.csrf.CsrfFilter@1cc73bb1, org.springframework.security.web.authentication.logout.LogoutFilter@6390f89c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6130156b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@598dca0a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@79620fed, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4a9d481b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@400b4dd5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2275d28a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18645844, org.springframework.security.web.access.ExceptionTranslationFilter@7782b3c5, org.springframework.security.web.access.intercept.AuthorizationFilter@56482084]
+    2025-12-26T10:00:42.889+09:00  INFO 30772 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2025-12-26T10:00:42.890+09:00  INFO 30772 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2025-12-26T10:00:42.894+09:00  INFO 30772 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+    2025-12-26T10:00:42.914+09:00  INFO 30772 --- [    Test worker] c.kz.magazine.controller.ContentApiTest  : Started ContentApiTest in 2.587 seconds (process running for 21.003)
+
+ContentApiTest > Get Contents List - Success STANDARD_OUT
+    2025-12-26T10:00:43.049+09:00  WARN 30772 --- [    Test worker] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/contents' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+
+ContentApiTest > Get Contents List - Success PASSED
+
+ContentApiTest > Get Content Detail - Success PASSED
+
+ContentApiTest > Delete Content - Success PASSED
+
+ContentApiTest > Create Content - Success PASSED
+
+ContentApiTest > Update Content - Success PASSED
+
+FileApiTest STANDARD_OUT
+    2025-12-26T10:00:43.528+09:00  INFO 30772 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kz.magazine.controller.FileApiTest]: FileApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-12-26T10:00:43.552+09:00  INFO 30772 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.controller.FileApiTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T10:00:43.648+09:00  INFO 30772 --- [    Test worker] com.kz.magazine.controller.FileApiTest   : Starting FileApiTest using Java 17.0.13 with PID 30772 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T10:00:43.649+09:00  INFO 30772 --- [    Test worker] com.kz.magazine.controller.FileApiTest   : No active profile set, falling back to 1 default profile: "default"
+    2025-12-26T10:00:45.030+09:00  WARN 30772 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+    Using generated security password: 03b8b149-56af-437f-8b29-f154464337e1
+
+    This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+    2025-12-26T10:00:45.102+09:00  INFO 30772 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@656096e1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bfee39d, org.springframework.security.web.context.SecurityContextHolderFilter@5edd911f, org.springframework.security.web.header.HeaderWriterFilter@b96fb73, org.springframework.web.filter.CorsFilter@de1b4dd, org.springframework.security.web.csrf.CsrfFilter@7f77a0d6, org.springframework.security.web.authentication.logout.LogoutFilter@64ed45eb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5460452a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3d57b228, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7fa41484, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@76c08ef3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ceefb02, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a68c0c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e92420f, org.springframework.security.web.access.ExceptionTranslationFilter@7c5c3132, org.springframework.security.web.access.intercept.AuthorizationFilter@5a2c8199]
+    2025-12-26T10:00:45.117+09:00  INFO 30772 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2025-12-26T10:00:45.117+09:00  INFO 30772 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2025-12-26T10:00:45.118+09:00  INFO 30772 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+    2025-12-26T10:00:45.131+09:00  INFO 30772 --- [    Test worker] com.kz.magazine.controller.FileApiTest   : Started FileApiTest in 1.565 seconds (process running for 23.221)
+
+FileApiTest > Upload File - Success STANDARD_OUT
+    2025-12-26T10:00:45.204+09:00  WARN 30772 --- [    Test worker] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/files/upload' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+
+FileApiTest > Upload File - Success PASSED
+
+RepositoryTest STANDARD_OUT
+    2025-12-26T10:00:45.234+09:00  INFO 30772 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kz.magazine.repository.RepositoryTest]: RepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-12-26T10:00:45.331+09:00  INFO 30772 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.repository.RepositoryTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T10:00:45.404+09:00  INFO 30772 --- [    Test worker] c.kz.magazine.repository.RepositoryTest  : Starting RepositoryTest using Java 17.0.13 with PID 30772 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T10:00:45.404+09:00  INFO 30772 --- [    Test worker] c.kz.magazine.repository.RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+    2025-12-26T10:00:45.702+09:00  INFO 30772 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2025-12-26T10:00:45.745+09:00  INFO 30772 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 10 JPA repository interfaces.
+    2025-12-26T10:00:45.894+09:00  INFO 30772 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+    2025-12-26T10:00:46.076+09:00  INFO 30772 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@d8714b4
+    2025-12-26T10:00:46.077+09:00  INFO 30772 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+    2025-12-26T10:00:46.150+09:00  INFO 30772 --- [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/kz_magazine (PostgreSQL 15.15)
+    2025-12-26T10:00:46.513+09:00  INFO 30772 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 6
+    2025-12-26T10:00:46.520+09:00  INFO 30772 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+    2025-12-26T10:00:46.569+09:00  INFO 30772 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2025-12-26T10:00:46.579+09:00  INFO 30772 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+    2025-12-26T10:00:46.592+09:00  INFO 30772 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2025-12-26T10:00:47.166+09:00  INFO 30772 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    2025-12-26T10:00:47.167+09:00  INFO 30772 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2025-12-26T10:00:47.725+09:00  INFO 30772 --- [    Test worker] c.kz.magazine.repository.RepositoryTest  : Started RepositoryTest in 2.388 seconds (process running for 25.814)
+
+RepositoryTest > Content Repository Mapping Test STANDARD_OUT
+    2025-12-26T10:00:47.761+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            c1_0.category_id,
+            c1_0.category_name,
+            c1_0.created_at,
+            c1_0.created_by,
+            c1_0.display_order,
+            c1_0.is_active,
+            c1_0.updated_at,
+            c1_0.updated_by 
+        from
+            categories c1_0 
+        where
+            c1_0.category_name=?
+    Hibernate: 
+        select
+            c1_0.category_id,
+            c1_0.category_name,
+            c1_0.created_at,
+            c1_0.created_by,
+            c1_0.display_order,
+            c1_0.is_active,
+            c1_0.updated_at,
+            c1_0.updated_by 
+        from
+            categories c1_0 
+        where
+            c1_0.category_name=?
+    2025-12-26T10:00:47.811+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    Hibernate: 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    2025-12-26T10:00:47.872+09:00 DEBUG 30772 --- [    Test worker] org.hibernate.SQL                        : 
+        insert 
+        into
+            contents
+            (author_id, average_rating, body_html, body_text, category_id, created_at, deleted_at, deleted_by, instagram_url, published_at, rating_count, rating_sum, status, summary, thumbnail_file_id, title, updated_at, view_count, youtube_url) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    Hibernate: 
+        insert 
+        into
+            contents
+            (author_id, average_rating, body_html, body_text, category_id, created_at, deleted_at, deleted_by, instagram_url, published_at, rating_count, rating_sum, status, summary, thumbnail_file_id, title, updated_at, view_count, youtube_url) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+
+RepositoryTest > Content Repository Mapping Test PASSED
+
+AuditLogServiceTest > logAction_Success() PASSED
+
+ContentViewServiceTest > incrementViewCount_Deduped() PASSED
+
+ContentViewServiceTest > incrementViewCount_Success() PASSED
+
+EventServiceTest > Draw winners should select random participants PASSED
+
+EventServiceTest > Duplicate participation should fail PASSED
+
+ReactionServiceTest > toggleLike_AddLike() PASSED
+
+ReactionServiceTest > toggleLike_RemoveLike() PASSED
+
+HtmlSanitizerTest > Should allow valid links but enforce nofollow PASSED
+
+HtmlSanitizerTest > Should remove script tags PASSED
+
+HtmlSanitizerTest > Should allow safe tags and attributes PASSED
+
+HtmlSanitizerTest > Should allow Youtube iframe PASSED
+
+2025-12-26T10:00:49.860+09:00  INFO 30772 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26T10:00:49.863+09:00  INFO 30772 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-26T10:00:50.048+09:00  INFO 30772 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-26T10:00:50.054+09:00  INFO 30772 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26T10:00:50.056+09:00  INFO 30772 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-12-26T10:00:50.183+09:00  INFO 30772 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-12-26T10:00:50.187+09:00  INFO 30772 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26T10:00:50.190+09:00  INFO 30772 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-12-26T10:00:50.330+09:00  INFO 30772 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+
+> Task :test FAILED
+
+22 tests completed, 1 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///D:/berodu/SORIN/project/Newsletter/backend/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.5/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 33s
+4 actionable tasks: 2 executed, 2 up-to-date

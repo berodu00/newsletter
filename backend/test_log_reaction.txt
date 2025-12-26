@@ -1,0 +1,29 @@
+> Task :compileJava
+> Task :processResources
+> Task :classes
+
+> Task :compileTestJava FAILED
+D:\berodu\SORIN\project\Newsletter\backend\src\test\java\com\kz\magazine\service\ReactionServiceTest.java:44: error: cannot find symbol
+        user.setUserId(1L);
+            ^
+  symbol:   method setUserId(long)
+  location: variable user of type User
+D:\berodu\SORIN\project\Newsletter\backend\src\test\java\com\kz\magazine\service\ReactionServiceTest.java:66: error: cannot find symbol
+        user.setUserId(1L);
+            ^
+  symbol:   method setUserId(long)
+  location: variable user of type User
+2 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileTestJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 7s
+3 actionable tasks: 3 executed

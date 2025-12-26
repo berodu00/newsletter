@@ -3,6 +3,7 @@ package com.kz.magazine.repository;
 import com.kz.magazine.entity.Category;
 import com.kz.magazine.entity.Content;
 import com.kz.magazine.entity.User;
+import com.kz.magazine.entity.ContentStatus;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,10 @@ import org.springframework.context.annotation.Import;
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 @Import(JpaConfig.class)
+@org.springframework.test.context.TestPropertySource(properties = {
+        "spring.jpa.show-sql=true",
+        "spring.jpa.properties.hibernate.format_sql=true"
+})
 class RepositoryTest {
 
     @Autowired
@@ -47,7 +52,7 @@ class RepositoryTest {
         content.setBodyHtml("<p>Test Body</p>");
         content.setCategory(category);
         content.setAuthor(author);
-        content.setStatus("DRAFT");
+        content.setStatus(ContentStatus.DRAFT);
 
         Content savedContent = contentRepository.save(content);
 

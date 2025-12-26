@@ -5,51 +5,76 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
 @Getter
+@Setter
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Table(name = "contents")
-public class Content extends BaseEntity {
+public class Content {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "content_id")
     private Long contentId;
 
-    @Setter
-    @Column(nullable = false)
+    @Column(nullable = false, length = 200)
     private String title;
 
-    @Setter
-    @Column(columnDefinition = "TEXT")
-    private String summary;
+    @Column(name = "body_html", columnDefinition = "TEXT", nullable = false)
+    private String bodyHtml; // Renamed from content
 
-    @Setter
-    @Column(columnDefinition = "TEXT", nullable = false)
-    private String bodyHtml;
-
-    @Setter
-    @Column(columnDefinition = "TEXT")
+    @Column(name = "body_text", columnDefinition = "TEXT")
     private String bodyText;
 
-    @Setter
+    @Column(name = "summary", length = 500)
+    private String summary;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "thumbnail_file_id")
     private ResourceFile thumbnailFile;
 
-    @Setter
+    @CreationTimestamp
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private LocalDateTime createdAt;
+
+    @UpdateTimestamp
+    @Column(name = "updated_at")
+    private LocalDateTime updatedAt;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, length = 20)
+    private ContentStatus status; // DRAFT, PUBLISHED, ARCHIVED
+
+    @Builder.Default
+    @Column(name = "view_count", nullable = false)
+    private Long viewCount = 0L;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id", nullable = false)
     private Category category;
 
-    @Setter
-    @Column(nullable = false)
-    private String status; // "DRAFT", "PUBLISHED", "SCHEDULED", "ARCHIVED"
+    @Builder.Default
+    @OneToMany(mappedBy = "content", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ContentHashtag> hashtags = new ArrayList<>();
 
-    @Setter
+    @Column(name = "youtube_url")
+    private String youtubeUrl;
+
+    @Column(name = "instagram_url")
+    private String instagramUrl;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "author_id", nullable = false)
     private User author;
@@ -61,9 +86,12 @@ public class Content extends BaseEntity {
     private Long deletedBy;
 
     // Statistics
-    private Long viewCount = 0L;
+    // viewCount defined above
+    @Builder.Default
     private Long ratingCount = 0L;
+    @Builder.Default
     private Long ratingSum = 0L;
+    @Builder.Default
     private BigDecimal averageRating = BigDecimal.ZERO;
 
     public void incrementViewCount() {
@@ -73,6 +101,6 @@ public class Content extends BaseEntity {
     public void softDelete(Long deletedBy) {
         this.deletedAt = LocalDateTime.now();
         this.deletedBy = deletedBy;
-        this.status = "ARCHIVED";
+        this.status = ContentStatus.ARCHIVED;
     }
 }

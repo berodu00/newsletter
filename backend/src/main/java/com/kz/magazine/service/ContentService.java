@@ -11,6 +11,7 @@ import com.kz.magazine.entity.ContentHashtag;
 import com.kz.magazine.entity.ContentHashtagId;
 import com.kz.magazine.entity.Hashtag;
 import com.kz.magazine.entity.User;
+import com.kz.magazine.entity.ContentStatus;
 import com.kz.magazine.repository.CategoryRepository;
 import com.kz.magazine.repository.ContentHashtagRepository;
 import com.kz.magazine.repository.ContentRepository;
@@ -38,7 +39,9 @@ public class ContentService {
     private final CategoryRepository categoryRepository;
     private final HashtagRepository hashtagRepository;
     private final ContentHashtagRepository contentHashtagRepository;
+
     private final UserRepository userRepository;
+    private final AuditLogService auditLogService;
 
     public Page<ContentResponseDto> getContents(ContentFilterDto filter, Pageable pageable) {
         Page<Content> contents;
@@ -86,17 +89,21 @@ public class ContentService {
         content.setBodyText(dto.getBodyText());
         content.setCategory(category);
         content.setAuthor(author);
-        content.setStatus(dto.getStatus());
+        content.setStatus(ContentStatus.valueOf(dto.getStatus()));
+        content.setYoutubeUrl(dto.getYoutubeUrl());
+        content.setInstagramUrl(dto.getInstagramUrl());
 
         Content savedContent = contentRepository.save(content);
 
         List<String> savedHashtags = processHashtags(savedContent, dto.getHashtags());
 
+        auditLogService.logAction(username, "CREATE", "CONTENT", savedContent.getContentId(), null, dto.toString());
+
         return ContentDetailResponseDto.from(savedContent, savedHashtags);
     }
 
     @Transactional
-    public ContentDetailResponseDto updateContent(Long contentId, ContentUpdateRequestDto dto) {
+    public ContentDetailResponseDto updateContent(Long contentId, ContentUpdateRequestDto dto, String username) {
         Content content = contentRepository.findById(contentId)
                 .orElseThrow(() -> new IllegalArgumentException("Content not found: " + contentId));
 
@@ -109,7 +116,11 @@ public class ContentService {
         if (dto.getBodyText() != null)
             content.setBodyText(dto.getBodyText());
         if (dto.getStatus() != null)
-            content.setStatus(dto.getStatus());
+            content.setStatus(ContentStatus.valueOf(dto.getStatus()));
+        if (dto.getYoutubeUrl() != null)
+            content.setYoutubeUrl(dto.getYoutubeUrl());
+        if (dto.getInstagramUrl() != null)
+            content.setInstagramUrl(dto.getInstagramUrl());
 
         if (dto.getCategoryName() != null) {
             Category category = categoryRepository.findByCategoryName(dto.getCategoryName())
@@ -135,6 +146,8 @@ public class ContentService {
             currentHashtags = contentHashtagRepository.findHashtagNamesByContentId(contentId);
         }
 
+        auditLogService.logAction(username, "UPDATE", "CONTENT", contentId, null, dto.toString());
+
         return ContentDetailResponseDto.from(content, currentHashtags);
     }
 
@@ -152,6 +165,8 @@ public class ContentService {
         for (String tagName : hashtags) {
             hashtagRepository.findByHashtagName(tagName).ifPresent(Hashtag::decrementUsage);
         }
+
+        auditLogService.logAction(username, "DELETE", "CONTENT", contentId);
     }
 
     private List<String> processHashtags(Content content, List<String> hashtags) {

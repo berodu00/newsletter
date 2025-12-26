@@ -1,0 +1,1656 @@
+Initialized native services in: C:\Users\hereisjeju\.gradle\native
+Initialized jansi services in: C:\Users\hereisjeju\.gradle\native
+Received JVM installation metadata from 'D:\berodu\JAVA\microsoft-jdk-17.0.13-windows-x64\jdk-17.0.13+11': {JAVA_HOME=D:\berodu\JAVA\microsoft-jdk-17.0.13-windows-x64\jdk-17.0.13+11, JAVA_VERSION=17.0.13, JAVA_VENDOR=Microsoft, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.13+11-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.13+11-LTS, VM_VENDOR=Microsoft, OS_ARCH=amd64}
+Found daemon DaemonInfo{pid=19296, address=[8690a2df-afb8-407c-a646-283f1b15e6e4 port:9096, addresses:[/127.0.0.1]], state=Idle, lastBusy=1766482260854, context=DefaultDaemonContext[uid=f732b412-5d43-4462-a12f-a86c1b397238,javaHome=D:\berodu\JAVA\microsoft-jdk-17.0.13-windows-x64\jdk-17.0.13+11,daemonRegistryDir=C:\Users\hereisjeju\.gradle\daemon,pid=19296,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=utf8,-Duser.country=KR,-Duser.language=ko,-Duser.variant]} however its context does not match the desired criteria.
+At least one daemon option is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=D:\berodu\JAVA\microsoft-jdk-17.0.13-windows-x64\jdk-17.0.13+11,daemonRegistryDir=C:\Users\hereisjeju\.gradle\daemon,pid=13264,idleTimeout=null,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=x-windows-949,-Duser.country=KR,-Duser.language=ko,-Duser.variant]
+Actual: DefaultDaemonContext[uid=f732b412-5d43-4462-a12f-a86c1b397238,javaHome=D:\berodu\JAVA\microsoft-jdk-17.0.13-windows-x64\jdk-17.0.13+11,daemonRegistryDir=C:\Users\hereisjeju\.gradle\daemon,pid=19296,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=utf8,-Duser.country=KR,-Duser.language=ko,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=17044, address=[18fb69b0-7c91-4627-8378-aa6a9397130f port:6984, addresses:[/127.0.0.1]], state=Idle, lastBusy=1766702242014, context=DefaultDaemonContext[uid=9fa84f5f-bbd9-48d7-987d-d22537452fa7,javaHome=C:\Users\hereisjeju\.antigravity\extensions\redhat.java-1.50.0-win32-x64\jre\21.0.9-win32-x86_64,daemonRegistryDir=C:\Users\hereisjeju\.gradle\daemon,pid=17044,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=KR,-Duser.language=ko,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=D:\berodu\JAVA\microsoft-jdk-17.0.13-windows-x64\jdk-17.0.13+11,daemonRegistryDir=C:\Users\hereisjeju\.gradle\daemon,pid=13264,idleTimeout=null,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=x-windows-949,-Duser.country=KR,-Duser.language=ko,-Duser.variant]
+Actual: DefaultDaemonContext[uid=9fa84f5f-bbd9-48d7-987d-d22537452fa7,javaHome=C:\Users\hereisjeju\.antigravity\extensions\redhat.java-1.50.0-win32-x64\jre\21.0.9-win32-x86_64,daemonRegistryDir=C:\Users\hereisjeju\.gradle\daemon,pid=17044,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=KR,-Duser.language=ko,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=15604, address=[294a8855-dc5a-4c1a-bffb-9401c20472c6 port:6990, addresses:[/127.0.0.1]], state=Idle, lastBusy=1766702256458, context=DefaultDaemonContext[uid=b0807b61-4abf-4227-8edb-e94f0df910ea,javaHome=C:\Users\hereisjeju\.antigravity\extensions\redhat.java-1.50.0-win32-x64\jre\21.0.9-win32-x86_64,daemonRegistryDir=C:\Users\hereisjeju\.gradle\daemon,pid=15604,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Dfile.encoding=UTF-8,-Duser.country=KR,-Duser.language=ko,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=D:\berodu\JAVA\microsoft-jdk-17.0.13-windows-x64\jdk-17.0.13+11,daemonRegistryDir=C:\Users\hereisjeju\.gradle\daemon,pid=13264,idleTimeout=null,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=x-windows-949,-Duser.country=KR,-Duser.language=ko,-Duser.variant]
+Actual: DefaultDaemonContext[uid=b0807b61-4abf-4227-8edb-e94f0df910ea,javaHome=C:\Users\hereisjeju\.antigravity\extensions\redhat.java-1.50.0-win32-x64\jre\21.0.9-win32-x86_64,daemonRegistryDir=C:\Users\hereisjeju\.gradle\daemon,pid=15604,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Dfile.encoding=UTF-8,-Duser.country=KR,-Duser.language=ko,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 30892). The daemon log file: C:\Users\hereisjeju\.gradle\daemon\8.5\daemon-30892.out.log
+Starting 15th build in daemon [uptime: 17 mins 39.378 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 18% of 384 MiB]
+Using 4 worker leases.
+Not watching D:\berodu\SORIN\project\Newsletter\backend since the file system is not supported
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'D:\berodu\SORIN\project\Newsletter\backend\settings.gradle'.
+Projects loaded. Root project using build file 'D:\berodu\SORIN\project\Newsletter\backend\build.gradle'.
+Included projects: [root project 'magazine']
+
+> Configure project :
+Evaluating root project 'magazine' using build file 'D:\berodu\SORIN\project\Newsletter\backend\build.gradle'.
+Applying dependency management to configuration 'annotationProcessor' in project 'magazine'
+Applying dependency management to configuration 'apiElements' in project 'magazine'
+Applying dependency management to configuration 'archives' in project 'magazine'
+Applying dependency management to configuration 'bootArchives' in project 'magazine'
+Applying dependency management to configuration 'compileClasspath' in project 'magazine'
+Applying dependency management to configuration 'compileOnly' in project 'magazine'
+Applying dependency management to configuration 'default' in project 'magazine'
+Applying dependency management to configuration 'developmentOnly' in project 'magazine'
+Applying dependency management to configuration 'implementation' in project 'magazine'
+Applying dependency management to configuration 'mainSourceElements' in project 'magazine'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'magazine'
+Applying dependency management to configuration 'runtimeClasspath' in project 'magazine'
+Applying dependency management to configuration 'runtimeElements' in project 'magazine'
+Applying dependency management to configuration 'runtimeOnly' in project 'magazine'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'magazine'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'magazine'
+Applying dependency management to configuration 'testCompileClasspath' in project 'magazine'
+Applying dependency management to configuration 'testCompileOnly' in project 'magazine'
+Applying dependency management to configuration 'testImplementation' in project 'magazine'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'magazine'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'magazine'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'magazine'
+All projects evaluated.
+Task name matched 'test'
+Selected primary task 'test' from project :
+Tasks to be executed: [task ':compileJava', task ':processResources', task ':classes', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test']
+Tasks that were excluded: []
+Resolve mutations for :compileJava (Thread[included builds,5,main]) started.
+:compileJava (Thread[included builds,5,main]) started.
+
+> Task :compileJava UP-TO-DATE
+Resolving global dependency management for project 'magazine'
+Excluding []
+Excluding []
+Caching disabled for task ':compileJava' because:
+  Build cache is disabled
+Skipping task ':compileJava' as it is up-to-date.
+Resolve mutations for :processResources (Thread[included builds,5,main]) started.
+:processResources (Thread[included builds,5,main]) started.
+
+> Task :processResources UP-TO-DATE
+Caching disabled for task ':processResources' because:
+  Build cache is disabled
+Skipping task ':processResources' as it is up-to-date.
+Resolve mutations for :classes (Thread[included builds,5,main]) started.
+:classes (Thread[included builds,5,main]) started.
+
+> Task :classes UP-TO-DATE
+Skipping task ':classes' as it has no actions.
+Resolve mutations for :compileTestJava (Thread[included builds,5,main]) started.
+:compileTestJava (Thread[included builds,5,main]) started.
+
+> Task :compileTestJava UP-TO-DATE
+Excluding []
+Excluding []
+Caching disabled for task ':compileTestJava' because:
+  Build cache is disabled
+Skipping task ':compileTestJava' as it is up-to-date.
+Resolve mutations for :processTestResources (Thread[Execution worker Thread 2,5,main]) started.
+:processTestResources (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :processTestResources NO-SOURCE
+Skipping task ':processTestResources' as it has no source files and no previous output files.
+Resolve mutations for :testClasses (Thread[Execution worker Thread 2,5,main]) started.
+:testClasses (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :testClasses UP-TO-DATE
+Skipping task ':testClasses' as it has no actions.
+Resolve mutations for :test (Thread[Execution worker Thread 2,5,main]) started.
+:test (Thread[Execution worker Thread 2,5,main]) started.
+Gradle Test Executor 6 started executing tests.
+
+> Task :test
+Excluding []
+Caching disabled for task ':test' because:
+  Build cache is disabled
+Task ':test' is not up-to-date because:
+  Task has failed previously.
+Starting process 'Gradle Test Executor 6'. Working directory: D:\berodu\SORIN\project\Newsletter\backend Command: D:\berodu\JAVA\microsoft-jdk-17.0.13-windows-x64\jdk-17.0.13+11\bin\java.exe -Dorg.gradle.internal.worker.tmpdir=D:\berodu\SORIN\project\Newsletter\backend\build\tmp\test\work -Dorg.gradle.native=false @C:\Users\hereisjeju\.gradle\.tmp\gradle-worker-classpath16983647560198671431txt -Xmx512m -Dfile.encoding=x-windows-949 -Duser.country=KR -Duser.language=ko -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 6'
+Successfully started process 'Gradle Test Executor 6'
+
+MagazineApplicationTests STANDARD_OUT
+    08:57:47.682 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.kz.magazine.MagazineApplicationTests]: MagazineApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    08:57:47.894 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.MagazineApplicationTests
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T08:57:48.929+09:00  INFO 30768 --- [    Test worker] c.kz.magazine.MagazineApplicationTests   : Starting MagazineApplicationTests using Java 17.0.13 with PID 30768 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T08:57:48.931+09:00  INFO 30768 --- [    Test worker] c.kz.magazine.MagazineApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+    2025-12-26T08:57:51.178+09:00  INFO 30768 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2025-12-26T08:57:51.303+09:00  INFO 30768 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 8 JPA repository interfaces.
+    2025-12-26T08:57:52.634+09:00  INFO 30768 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+    2025-12-26T08:57:54.272+09:00  INFO 30768 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@718989fa
+    2025-12-26T08:57:54.277+09:00  INFO 30768 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+    2025-12-26T08:57:54.472+09:00  INFO 30768 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+    2025-12-26T08:57:54.472+09:00  INFO 30768 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+    2025-12-26T08:57:54.472+09:00  INFO 30768 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
+    2025-12-26T08:57:54.668+09:00  INFO 30768 --- [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/kz_magazine (PostgreSQL 15.15)
+    2025-12-26T08:57:55.315+09:00  INFO 30768 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+    2025-12-26T08:57:55.337+09:00  INFO 30768 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - add reactions"
+    2025-12-26T08:57:55.382+09:00 ERROR 30768 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migration of schema "public" to version "4 - add reactions" failed! Changes successfully rolled back.
+    2025-12-26T08:57:55.400+09:00  WARN 30768 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    2025-12-26T08:57:55.400+09:00  INFO 30768 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+    2025-12-26T08:57:55.411+09:00  INFO 30768 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+    2025-12-26T08:57:55.420+09:00  INFO 30768 --- [    Test worker] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+    Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+    2025-12-26T08:57:55.451+09:00 ERROR 30768 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+
+    org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+    	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+    	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+    	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.1.jar:6.1.1]
+    	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.1.jar:6.1.1]
+    	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:552) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:247) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+    	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+    	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+    	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+    	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+    	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+    	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+    	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+    	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
+    	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+    	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+    	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+    	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+    	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+    	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+    	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+    	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+    	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+    	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+    	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
+    	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
+    	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+    	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+    Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:382) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:272) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:271) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:244) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:139) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:73) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.lambda$execute$0(PostgreSQLAdvisoryLockTemplate.java:56) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:56) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:96) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:144) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:139) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:97) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:188) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:213) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.Flyway.migrate(Flyway.java:140) ~[flyway-core-9.22.3.jar:na]
+    	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.2.0.jar:3.2.0]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+    	... 109 common frames omitted
+    Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:267) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:222) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:374) ~[flyway-core-9.22.3.jar:na]
+    	... 128 common frames omitted
+    Caused by: org.postgresql.util.PSQLException: ERROR: relation "reactions" already exists
+    	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292) ~[postgresql-42.6.0.jar:42.6.0]
+    	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+    	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+    	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:201) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:95) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:210) ~[flyway-core-9.22.3.jar:na]
+    	... 134 common frames omitted
+
+
+MagazineApplicationTests STANDARD_ERROR
+
+
+
+    ============================
+    CONDITIONS EVALUATION REPORT
+    ============================
+
+
+    Positive matches:
+    -----------------
+
+        None
+
+
+    Negative matches:
+    -----------------
+
+        None
+
+
+    Exclusions:
+    -----------
+
+        None
+
+
+    Unconditional classes:
+    ----------------------
+
+        None
+
+
+
+
+MagazineApplicationTests STANDARD_OUT
+    2025-12-26T08:57:55.532+09:00 ERROR 30768 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.kz.magazine.MagazineApplicationTests@54463380]
+
+    java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@3dc82e6a testClass = com.kz.magazine.MagazineApplicationTests, locations = [], classes = [com.kz.magazine.MagazineApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@5c42d2b7, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@aeab9a1, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@72ea6193, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@75b25825, org.springframework.boot.test.context.SpringBootTestAnnotation@bfd32aef], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:247) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+    	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+    	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+    	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+    	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+    	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+    	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+    	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+    	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
+    	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+    	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+    	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+    	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+    	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+    	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+    	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+    	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+    	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+    	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+    	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
+    	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
+    	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+    	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+    Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+    	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+    	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+    	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.1.jar:6.1.1]
+    	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.1.jar:6.1.1]
+    	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:552) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.1.jar:6.1.1]
+    	... 86 common frames omitted
+    Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:382) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:272) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:271) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:244) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:139) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:73) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.lambda$execute$0(PostgreSQLAdvisoryLockTemplate.java:56) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:56) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:96) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:144) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:139) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:97) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:188) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:213) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.Flyway.migrate(Flyway.java:140) ~[flyway-core-9.22.3.jar:na]
+    	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.2.0.jar:3.2.0]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+    	... 109 common frames omitted
+    Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:267) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:222) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:374) ~[flyway-core-9.22.3.jar:na]
+    	... 128 common frames omitted
+    Caused by: org.postgresql.util.PSQLException: ERROR: relation "reactions" already exists
+    	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292) ~[postgresql-42.6.0.jar:42.6.0]
+    	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+    	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+    	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:201) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:95) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:210) ~[flyway-core-9.22.3.jar:na]
+    	... 134 common frames omitted
+
+
+MagazineApplicationTests > contextLoads() FAILED
+    java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@3dc82e6a testClass = com.kz.magazine.MagazineApplicationTests, locations = [], classes = [com.kz.magazine.MagazineApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@5c42d2b7, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@aeab9a1, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@72ea6193, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@75b25825, org.springframework.boot.test.context.SpringBootTestAnnotation@bfd32aef], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+        at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+        at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+        at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
+        at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
+        at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:247)
+        at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+        at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+        at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+        at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+        at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+        at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+        at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+        at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+        at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+        at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+        at java.base/java.util.Optional.orElseGet(Optional.java:364)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+        at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+        at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+        at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V4__add_reactions.sql failed
+        --------------------------------------
+        SQL State  : 42P07
+        Error Code : 0
+        Message    : ERROR: relation "reactions" already exists
+        Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+        Line       : 1
+        Statement  : CREATE TABLE reactions (
+          reaction_id   BIGSERIAL PRIMARY KEY,
+          content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+          user_id       BIGINT NOT NULL REFERENCES users(user_id),
+          reaction_type VARCHAR(20) NOT NULL,
+          rating_value  INTEGER,
+          created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+          UNIQUE(content_id, user_id, reaction_type)
+        )
+            at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775)
+            at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+            at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+            at app//org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+            at app//org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+            at app//org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+            at app//org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+            at app//org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+            at app//org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+            at app//org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+            at app//org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+            at app//org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+            at app//org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+            at app//org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442)
+            at app//org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:552)
+            at app//org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+            at app//org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+            at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+            at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+            ... 86 more
+
+            Caused by:
+            org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V4__add_reactions.sql failed
+            --------------------------------------
+            SQL State  : 42P07
+            Error Code : 0
+            Message    : ERROR: relation "reactions" already exists
+            Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+            Line       : 1
+            Statement  : CREATE TABLE reactions (
+              reaction_id   BIGSERIAL PRIMARY KEY,
+              content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+              user_id       BIGINT NOT NULL REFERENCES users(user_id),
+              reaction_type VARCHAR(20) NOT NULL,
+              rating_value  INTEGER,
+              created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+              UNIQUE(content_id, user_id, reaction_type)
+            )
+                at app//org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:382)
+                at app//org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:272)
+                at app//org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55)
+                at app//org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:271)
+                at app//org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:244)
+                at app//org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:139)
+                at app//org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:73)
+                at app//org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.lambda$execute$0(PostgreSQLAdvisoryLockTemplate.java:56)
+                at app//org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55)
+                at app//org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:56)
+                at app//org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:96)
+                at app//org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:144)
+                at app//org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:139)
+                at app//org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:97)
+                at app//org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:188)
+                at app//org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:213)
+                at app//org.flywaydb.core.Flyway.migrate(Flyway.java:140)
+                at app//org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+                at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+                at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+                ... 109 more
+
+                Caused by:
+                org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Migration V4__add_reactions.sql failed
+                --------------------------------------
+                SQL State  : 42P07
+                Error Code : 0
+                Message    : ERROR: relation "reactions" already exists
+                Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+                Line       : 1
+                Statement  : CREATE TABLE reactions (
+                  reaction_id   BIGSERIAL PRIMARY KEY,
+                  content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+                  user_id       BIGINT NOT NULL REFERENCES users(user_id),
+                  reaction_type VARCHAR(20) NOT NULL,
+                  rating_value  INTEGER,
+                  created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                  UNIQUE(content_id, user_id, reaction_type)
+                )
+                    at app//org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:267)
+                    at app//org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:222)
+                    at app//org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+                    at app//org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68)
+                    at app//org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57)
+                    at app//org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+                    at app//org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56)
+                    at app//org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:374)
+                    ... 128 more
+
+                    Caused by:
+                    org.postgresql.util.PSQLException: ERROR: relation "reactions" already exists
+                        at app//org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+                        at app//org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+                        at app//org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+                        at app//org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+                        at app//org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+                        at app//org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+                        at app//org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+                        at app//org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+                        at app//org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+                        at app//com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+                        at app//com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+                        at app//org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:201)
+                        at app//org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:95)
+                        at app//org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:210)
+                        ... 134 more
+
+RepositoryTest STANDARD_OUT
+    2025-12-26T08:57:55.640+09:00  INFO 30768 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kz.magazine.repository.RepositoryTest]: RepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-12-26T08:57:55.874+09:00  INFO 30768 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.repository.RepositoryTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T08:57:56.254+09:00  INFO 30768 --- [    Test worker] c.kz.magazine.repository.RepositoryTest  : Starting RepositoryTest using Java 17.0.13 with PID 30768 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T08:57:56.255+09:00  INFO 30768 --- [    Test worker] c.kz.magazine.repository.RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+    2025-12-26T08:57:56.598+09:00  INFO 30768 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2025-12-26T08:57:56.663+09:00  INFO 30768 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 8 JPA repository interfaces.
+    2025-12-26T08:57:56.839+09:00  INFO 30768 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+    2025-12-26T08:57:57.123+09:00  INFO 30768 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@491893f8
+    2025-12-26T08:57:57.124+09:00  INFO 30768 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+    2025-12-26T08:57:57.158+09:00  INFO 30768 --- [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/kz_magazine (PostgreSQL 15.15)
+    2025-12-26T08:57:57.239+09:00  INFO 30768 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+    2025-12-26T08:57:57.251+09:00  INFO 30768 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - add reactions"
+    2025-12-26T08:57:57.268+09:00 ERROR 30768 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migration of schema "public" to version "4 - add reactions" failed! Changes successfully rolled back.
+    2025-12-26T08:57:57.278+09:00  WARN 30768 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    2025-12-26T08:57:57.278+09:00  INFO 30768 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+    2025-12-26T08:57:57.296+09:00  INFO 30768 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+    2025-12-26T08:57:57.297+09:00  INFO 30768 --- [    Test worker] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+    Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+    2025-12-26T08:57:57.299+09:00 ERROR 30768 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+
+    org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+    	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+    	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+    	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.1.jar:6.1.1]
+    	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.1.jar:6.1.1]
+    	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:552) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:141) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:247) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+    	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+    	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+    	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+    	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+    	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+    	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+    	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+    	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
+    	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+    	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+    	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+    	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+    	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+    	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+    	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+    	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+    	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+    	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+    	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
+    	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
+    	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+    	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+    Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:382) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:272) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:271) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:244) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:139) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:73) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.lambda$execute$0(PostgreSQLAdvisoryLockTemplate.java:56) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:56) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:96) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:144) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:139) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:97) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:188) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:213) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.Flyway.migrate(Flyway.java:140) ~[flyway-core-9.22.3.jar:na]
+    	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.2.0.jar:3.2.0]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+    	... 109 common frames omitted
+    Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:267) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:222) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:374) ~[flyway-core-9.22.3.jar:na]
+    	... 128 common frames omitted
+    Caused by: org.postgresql.util.PSQLException: ERROR: relation "reactions" already exists
+    	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292) ~[postgresql-42.6.0.jar:42.6.0]
+    	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+    	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+    	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:201) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:95) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:210) ~[flyway-core-9.22.3.jar:na]
+    	... 134 common frames omitted
+
+
+RepositoryTest STANDARD_ERROR
+
+
+
+    ============================
+    CONDITIONS EVALUATION REPORT
+    ============================
+
+
+    Positive matches:
+    -----------------
+
+        None
+
+
+    Negative matches:
+    -----------------
+
+        None
+
+
+    Exclusions:
+    -----------
+
+        None
+
+
+    Unconditional classes:
+    ----------------------
+
+        None
+
+
+
+
+RepositoryTest STANDARD_OUT
+    2025-12-26T08:57:57.306+09:00 ERROR 30768 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.kz.magazine.repository.RepositoryTest@14e3d439]
+
+    java.lang.IllegalStateException: Failed to load ApplicationContext for [MergedContextConfiguration@8ac512e testClass = com.kz.magazine.repository.RepositoryTest, locations = [], classes = [com.kz.magazine.MagazineApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@7b44bfb8, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@34be3d80, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@b7be8f92, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@5c42d2b7, [ImportsContextCustomizer@4bbc21bd key = [org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, com.kz.magazine.config.JpaConfig, org.springframework.boot.autoconfigure.jdbc.JdbcClientAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@aeab9a1, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@72ea6193, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@b34320cd], contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:141) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:247) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+    	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+    	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+    	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+    	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+    	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+    	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+    	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+    	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+    	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.1.jar:5.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
+    	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+    	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+    	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+    	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+    	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+    	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+    	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+    	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+    	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+    	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+    	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+    	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
+    	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
+    	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+    	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+    Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+    	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+    	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+    	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.1.jar:6.1.1]
+    	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.1.jar:6.1.1]
+    	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442) ~[spring-boot-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:552) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.0.jar:3.2.0]
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.1.jar:6.1.1]
+    	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.1.jar:6.1.1]
+    	... 86 common frames omitted
+    Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:382) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:272) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:271) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:244) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:139) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:73) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.lambda$execute$0(PostgreSQLAdvisoryLockTemplate.java:56) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:56) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:96) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:144) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:139) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:97) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:188) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:213) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.Flyway.migrate(Flyway.java:140) ~[flyway-core-9.22.3.jar:na]
+    	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.2.0.jar:3.2.0]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+    	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+    	... 109 common frames omitted
+    Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Migration V4__add_reactions.sql failed
+    --------------------------------------
+    SQL State  : 42P07
+    Error Code : 0
+    Message    : ERROR: relation "reactions" already exists
+    Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+    Line       : 1
+    Statement  : CREATE TABLE reactions (
+      reaction_id   BIGSERIAL PRIMARY KEY,
+      content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+      user_id       BIGINT NOT NULL REFERENCES users(user_id),
+      reaction_type VARCHAR(20) NOT NULL,
+      rating_value  INTEGER,
+      created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(content_id, user_id, reaction_type)
+    )
+
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:267) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:222) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:374) ~[flyway-core-9.22.3.jar:na]
+    	... 128 common frames omitted
+    Caused by: org.postgresql.util.PSQLException: ERROR: relation "reactions" already exists
+    	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297) ~[postgresql-42.6.0.jar:42.6.0]
+    	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292) ~[postgresql-42.6.0.jar:42.6.0]
+    	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+    	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+    	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:201) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:95) ~[flyway-core-9.22.3.jar:na]
+    	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:210) ~[flyway-core-9.22.3.jar:na]
+    	... 134 common frames omitted
+
+
+RepositoryTest > Content Repository Mapping Test FAILED
+    java.lang.IllegalStateException: Failed to load ApplicationContext for [MergedContextConfiguration@8ac512e testClass = com.kz.magazine.repository.RepositoryTest, locations = [], classes = [com.kz.magazine.MagazineApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@7b44bfb8, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@34be3d80, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@b7be8f92, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@5c42d2b7, [ImportsContextCustomizer@4bbc21bd key = [org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, com.kz.magazine.config.JpaConfig, org.springframework.boot.autoconfigure.jdbc.JdbcClientAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@aeab9a1, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@72ea6193, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@b34320cd], contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+        at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+        at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+        at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:141)
+        at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97)
+        at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:247)
+        at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+        at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+        at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+        at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+        at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+        at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+        at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+        at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+        at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+        at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+        at java.base/java.util.Optional.orElseGet(Optional.java:364)
+        at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+        at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+        at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+        at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+        at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+        at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+        at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+        at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+        at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+        at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+        at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+        at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+        at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+        at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+        Caused by:
+        org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V4__add_reactions.sql failed
+        --------------------------------------
+        SQL State  : 42P07
+        Error Code : 0
+        Message    : ERROR: relation "reactions" already exists
+        Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+        Line       : 1
+        Statement  : CREATE TABLE reactions (
+          reaction_id   BIGSERIAL PRIMARY KEY,
+          content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+          user_id       BIGINT NOT NULL REFERENCES users(user_id),
+          reaction_type VARCHAR(20) NOT NULL,
+          rating_value  INTEGER,
+          created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+          UNIQUE(content_id, user_id, reaction_type)
+        )
+            at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775)
+            at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+            at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+            at app//org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+            at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+            at app//org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+            at app//org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+            at app//org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+            at app//org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+            at app//org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+            at app//org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+            at app//org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+            at app//org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+            at app//org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+            at app//org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1442)
+            at app//org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:552)
+            at app//org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+            at app//org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+            at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+            at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+            ... 86 more
+
+            Caused by:
+            org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V4__add_reactions.sql failed
+            --------------------------------------
+            SQL State  : 42P07
+            Error Code : 0
+            Message    : ERROR: relation "reactions" already exists
+            Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+            Line       : 1
+            Statement  : CREATE TABLE reactions (
+              reaction_id   BIGSERIAL PRIMARY KEY,
+              content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+              user_id       BIGINT NOT NULL REFERENCES users(user_id),
+              reaction_type VARCHAR(20) NOT NULL,
+              rating_value  INTEGER,
+              created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+              UNIQUE(content_id, user_id, reaction_type)
+            )
+                at app//org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:382)
+                at app//org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:272)
+                at app//org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55)
+                at app//org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:271)
+                at app//org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:244)
+                at app//org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:139)
+                at app//org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:73)
+                at app//org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.lambda$execute$0(PostgreSQLAdvisoryLockTemplate.java:56)
+                at app//org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55)
+                at app//org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:56)
+                at app//org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:96)
+                at app//org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:144)
+                at app//org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:139)
+                at app//org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:97)
+                at app//org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:188)
+                at app//org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:213)
+                at app//org.flywaydb.core.Flyway.migrate(Flyway.java:140)
+                at app//org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+                at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+                at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+                ... 109 more
+
+                Caused by:
+                org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Migration V4__add_reactions.sql failed
+                --------------------------------------
+                SQL State  : 42P07
+                Error Code : 0
+                Message    : ERROR: relation "reactions" already exists
+                Location   : db/migration/V4__add_reactions.sql (D:\berodu\SORIN\project\Newsletter\backend\build\resources\main\db\migration\V4__add_reactions.sql)
+                Line       : 1
+                Statement  : CREATE TABLE reactions (
+                  reaction_id   BIGSERIAL PRIMARY KEY,
+                  content_id    BIGINT NOT NULL REFERENCES contents(content_id) ON DELETE CASCADE,
+                  user_id       BIGINT NOT NULL REFERENCES users(user_id),
+                  reaction_type VARCHAR(20) NOT NULL,
+                  rating_value  INTEGER,
+                  created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                  UNIQUE(content_id, user_id, reaction_type)
+                )
+                    at app//org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:267)
+                    at app//org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:222)
+                    at app//org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+                    at app//org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68)
+                    at app//org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57)
+                    at app//org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+                    at app//org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56)
+                    at app//org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:374)
+                    ... 128 more
+
+                    Caused by:
+                    org.postgresql.util.PSQLException: ERROR: relation "reactions" already exists
+                        at app//org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+                        at app//org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+                        at app//org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+                        at app//org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+                        at app//org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+                        at app//org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+                        at app//org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+                        at app//org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+                        at app//org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292)
+                        at app//com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+                        at app//com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+                        at app//org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:201)
+                        at app//org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:95)
+                        at app//org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:210)
+                        ... 134 more
+
+ContentApiTest STANDARD_OUT
+    2025-12-26T08:57:57.334+09:00  INFO 30768 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kz.magazine.controller.ContentApiTest]: ContentApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-12-26T08:57:57.403+09:00  INFO 30768 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.controller.ContentApiTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T08:57:57.657+09:00  INFO 30768 --- [    Test worker] c.kz.magazine.controller.ContentApiTest  : Starting ContentApiTest using Java 17.0.13 with PID 30768 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T08:57:57.658+09:00  INFO 30768 --- [    Test worker] c.kz.magazine.controller.ContentApiTest  : No active profile set, falling back to 1 default profile: "default"
+
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :test
+    2025-12-26T08:58:02.892+09:00  WARN 30768 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+    Using generated security password: 7e764158-df93-4dbd-b010-06c86f5ad9b6
+
+    This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+    2025-12-26T08:58:03.413+09:00  INFO 30768 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6eeeb9da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17635531, org.springframework.security.web.context.SecurityContextHolderFilter@159408a7, org.springframework.security.web.header.HeaderWriterFilter@d1973e8, org.springframework.web.filter.CorsFilter@2e488e45, org.springframework.security.web.csrf.CsrfFilter@641ab175, org.springframework.security.web.authentication.logout.LogoutFilter@45b2b0ed, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3333245e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2fbd47b7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@396519b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7f08c343, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74901d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3146f3d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18ad085a, org.springframework.security.web.access.ExceptionTranslationFilter@148f94dc, org.springframework.security.web.access.intercept.AuthorizationFilter@14d6ede3]
+    2025-12-26T08:58:03.557+09:00  INFO 30768 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2025-12-26T08:58:03.558+09:00  INFO 30768 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2025-12-26T08:58:03.624+09:00  INFO 30768 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 62 ms
+    2025-12-26T08:58:03.677+09:00  INFO 30768 --- [    Test worker] c.kz.magazine.controller.ContentApiTest  : Started ContentApiTest in 6.267 seconds (process running for 18.052)
+
+ContentApiTest > Get Contents List - Success STANDARD_OUT
+    2025-12-26T08:58:04.031+09:00  WARN 30768 --- [    Test worker] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/contents' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+
+FileApiTest STANDARD_OUT
+    2025-12-26T08:58:05.281+09:00  INFO 30768 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kz.magazine.controller.FileApiTest]: FileApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-12-26T08:58:05.330+09:00  INFO 30768 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.controller.FileApiTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T08:58:05.708+09:00  INFO 30768 --- [    Test worker] com.kz.magazine.controller.FileApiTest   : Starting FileApiTest using Java 17.0.13 with PID 30768 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T08:58:05.708+09:00  INFO 30768 --- [    Test worker] com.kz.magazine.controller.FileApiTest   : No active profile set, falling back to 1 default profile: "default"
+    2025-12-26T08:58:06.671+09:00  WARN 30768 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+    Using generated security password: 49e0ffd4-3ccd-4d56-8e18-ec89f4fcc847
+
+    This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+    2025-12-26T08:58:06.716+09:00  INFO 30768 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64ef9b9a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@264340f0, org.springframework.security.web.context.SecurityContextHolderFilter@3bdf6d63, org.springframework.security.web.header.HeaderWriterFilter@1ff65426, org.springframework.web.filter.CorsFilter@7640a191, org.springframework.security.web.csrf.CsrfFilter@60f6d689, org.springframework.security.web.authentication.logout.LogoutFilter@5fdebe73, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a234e1f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2fe152aa, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@504a9352, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@406cc81b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d4bb60f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29b61bb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48e1e18a, org.springframework.security.web.access.ExceptionTranslationFilter@6a90b5e8, org.springframework.security.web.access.intercept.AuthorizationFilter@60a4595e]
+    2025-12-26T08:58:06.729+09:00  INFO 30768 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2025-12-26T08:58:06.729+09:00  INFO 30768 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2025-12-26T08:58:06.730+09:00  INFO 30768 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+    2025-12-26T08:58:06.746+09:00  INFO 30768 --- [    Test worker] com.kz.magazine.controller.FileApiTest   : Started FileApiTest in 1.39 seconds (process running for 21.121)
+
+FileApiTest > Upload File - Success STANDARD_OUT
+    2025-12-26T08:58:06.782+09:00  WARN 30768 --- [    Test worker] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/files/upload' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+
+Gradle Test Executor 6 finished executing tests.
+
+> Task :test
+
+17 tests completed, 2 failed
+Finished generating test XML results (0.073 secs) into: D:\berodu\SORIN\project\Newsletter\backend\build\test-results\test
+Generating HTML test report...
+Finished generating test html results (0.023 secs) into: D:\berodu\SORIN\project\Newsletter\backend\build\reports\tests\test
+
+> Task :test FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///D:/berodu/SORIN/project/Newsletter/backend/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.5/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 28s
+4 actionable tasks: 1 executed, 3 up-to-date
+Some of the file system contents retained in the virtual file system are on file systems that Gradle doesn't support watching. The relevant state was discarded to ensure changes to these locations are properly detected. You can override this by explicitly enabling file system watching.
+Watched directory hierarchies: []

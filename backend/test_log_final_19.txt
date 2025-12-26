@@ -1,0 +1,306 @@
+
+> Task :compileJava
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:57: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private Long viewCount = 0L;
+                 ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:64: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private List<ContentHashtag> hashtags = new ArrayList<>();
+                                 ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:84: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private Long ratingCount = 0L;
+                 ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:85: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private Long ratingSum = 0L;
+                 ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:86: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private BigDecimal averageRating = BigDecimal.ZERO;
+                       ^
+5 warnings
+
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+RepositoryTest STANDARD_OUT
+    09:42:32.702 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.kz.magazine.repository.RepositoryTest]: RepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    09:42:32.981 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.repository.RepositoryTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T09:42:34.342+09:00  INFO 23272 --- [    Test worker] c.kz.magazine.repository.RepositoryTest  : Starting RepositoryTest using Java 17.0.13 with PID 23272 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T09:42:34.344+09:00  INFO 23272 --- [    Test worker] c.kz.magazine.repository.RepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+    2025-12-26T09:42:35.438+09:00  INFO 23272 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2025-12-26T09:42:35.588+09:00  INFO 23272 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 8 JPA repository interfaces.
+    2025-12-26T09:42:36.370+09:00  INFO 23272 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+    2025-12-26T09:42:36.844+09:00  INFO 23272 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@186d8a71
+    2025-12-26T09:42:36.846+09:00  INFO 23272 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+    2025-12-26T09:42:36.990+09:00  INFO 23272 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+    2025-12-26T09:42:36.990+09:00  INFO 23272 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+    2025-12-26T09:42:36.990+09:00  INFO 23272 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
+    2025-12-26T09:42:37.034+09:00  INFO 23272 --- [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/kz_magazine (PostgreSQL 15.15)
+    2025-12-26T09:42:37.417+09:00  INFO 23272 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+    2025-12-26T09:42:37.428+09:00  INFO 23272 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+    2025-12-26T09:42:37.706+09:00  INFO 23272 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2025-12-26T09:42:37.852+09:00  INFO 23272 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+    2025-12-26T09:42:37.937+09:00  INFO 23272 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+    2025-12-26T09:42:38.527+09:00  INFO 23272 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2025-12-26T09:42:40.310+09:00  INFO 23272 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    2025-12-26T09:42:40.315+09:00  INFO 23272 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2025-12-26T09:42:40.948+09:00  INFO 23272 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+    2025-12-26T09:42:42.125+09:00  INFO 23272 --- [    Test worker] c.kz.magazine.repository.RepositoryTest  : Started RepositoryTest in 8.891 seconds (process running for 11.928)
+
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :test
+
+RepositoryTest > Content Repository Mapping Test STANDARD_OUT
+    2025-12-26T09:42:43.386+09:00 DEBUG 23272 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            c1_0.category_id,
+            c1_0.category_name,
+            c1_0.created_at,
+            c1_0.created_by,
+            c1_0.display_order,
+            c1_0.is_active,
+            c1_0.updated_at,
+            c1_0.updated_by 
+        from
+            categories c1_0 
+        where
+            c1_0.category_name=?
+    Hibernate: 
+        select
+            c1_0.category_id,
+            c1_0.category_name,
+            c1_0.created_at,
+            c1_0.created_by,
+            c1_0.display_order,
+            c1_0.is_active,
+            c1_0.updated_at,
+            c1_0.updated_by 
+        from
+            categories c1_0 
+        where
+            c1_0.category_name=?
+    2025-12-26T09:42:43.417+09:00 DEBUG 23272 --- [    Test worker] org.hibernate.SQL                        : 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    Hibernate: 
+        select
+            u1_0.user_id,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.department,
+            u1_0.email,
+            u1_0.is_active,
+            u1_0.name,
+            u1_0.role,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            u1_0.username=?
+    2025-12-26T09:42:43.490+09:00 DEBUG 23272 --- [    Test worker] org.hibernate.SQL                        : 
+        insert 
+        into
+            contents
+            (author_id, average_rating, body_html, body_text, category_id, created_at, deleted_at, deleted_by, instagram_url, published_at, rating_count, rating_sum, status, summary, thumbnail_file_id, title, updated_at, view_count, youtube_url) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    Hibernate: 
+        insert 
+        into
+            contents
+            (author_id, average_rating, body_html, body_text, category_id, created_at, deleted_at, deleted_by, instagram_url, published_at, rating_count, rating_sum, status, summary, thumbnail_file_id, title, updated_at, view_count, youtube_url) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    2025-12-26T09:42:43.503+09:00  WARN 23272 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23502
+    2025-12-26T09:42:43.503+09:00 ERROR 23272 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: null value in column "created_at" of relation "contents" violates not-null constraint
+      Detail: Failing row contains (9, Test Title, Test Summary, <p>Test Body</p>, null, null, 1, DRAFT, 1, null, null, null, null, null, null, null, 0, 0, 0, 0.00, null, null).
+
+RepositoryTest > Content Repository Mapping Test FAILED
+    org.springframework.dao.DataIntegrityViolationException at RepositoryTest.java:57
+        Caused by: org.hibernate.exception.ConstraintViolationException at RepositoryTest.java:57
+            Caused by: org.postgresql.util.PSQLException at RepositoryTest.java:57
+
+MagazineApplicationTests STANDARD_OUT
+    2025-12-26T09:42:43.541+09:00  INFO 23272 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kz.magazine.MagazineApplicationTests]: MagazineApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-12-26T09:42:43.550+09:00  INFO 23272 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.MagazineApplicationTests
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T09:42:43.640+09:00  INFO 23272 --- [    Test worker] c.kz.magazine.MagazineApplicationTests   : Starting MagazineApplicationTests using Java 17.0.13 with PID 23272 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T09:42:43.640+09:00  INFO 23272 --- [    Test worker] c.kz.magazine.MagazineApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+    2025-12-26T09:42:44.420+09:00  INFO 23272 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2025-12-26T09:42:44.452+09:00  INFO 23272 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 8 JPA repository interfaces.
+    2025-12-26T09:42:44.935+09:00  INFO 23272 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+    2025-12-26T09:42:45.220+09:00  INFO 23272 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@2f0765f7
+    2025-12-26T09:42:45.220+09:00  INFO 23272 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+    2025-12-26T09:42:45.235+09:00  INFO 23272 --- [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/kz_magazine (PostgreSQL 15.15)
+    2025-12-26T09:42:45.341+09:00  INFO 23272 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 5
+    2025-12-26T09:42:45.343+09:00  INFO 23272 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+    2025-12-26T09:42:45.381+09:00  INFO 23272 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2025-12-26T09:42:45.385+09:00  INFO 23272 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+    2025-12-26T09:42:45.424+09:00  INFO 23272 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2025-12-26T09:42:45.745+09:00  INFO 23272 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    2025-12-26T09:42:45.745+09:00  INFO 23272 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2025-12-26T09:42:46.386+09:00  WARN 23272 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+    2025-12-26T09:42:46.417+09:00  WARN 23272 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+    Using generated security password: c59bd49a-bd69-4ce4-899e-f6428f25bce9
+
+    This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+    2025-12-26T09:42:47.526+09:00  INFO 23272 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7cf9557a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f2df0b3, org.springframework.security.web.context.SecurityContextHolderFilter@59217757, org.springframework.security.web.header.HeaderWriterFilter@4dd94931, org.springframework.web.filter.CorsFilter@1a60b0c4, org.springframework.security.web.authentication.logout.LogoutFilter@7645ced6, com.kz.magazine.security.JwtAuthenticationFilter@48c6107a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e4084e0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64bf60c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ea2ce9d, org.springframework.security.web.session.SessionManagementFilter@bd62a6e, org.springframework.security.web.access.ExceptionTranslationFilter@8921749, org.springframework.security.web.access.intercept.AuthorizationFilter@62ee252b]
+    2025-12-26T09:42:48.206+09:00  INFO 23272 --- [    Test worker] c.kz.magazine.MagazineApplicationTests   : Started MagazineApplicationTests in 4.63 seconds (process running for 18.009)
+
+MagazineApplicationTests > contextLoads() PASSED
+
+ContentApiTest STANDARD_OUT
+    2025-12-26T09:42:48.329+09:00  INFO 23272 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kz.magazine.controller.ContentApiTest]: ContentApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-12-26T09:42:48.352+09:00  INFO 23272 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.controller.ContentApiTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T09:42:48.437+09:00  INFO 23272 --- [    Test worker] c.kz.magazine.controller.ContentApiTest  : Starting ContentApiTest using Java 17.0.13 with PID 23272 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T09:42:48.438+09:00  INFO 23272 --- [    Test worker] c.kz.magazine.controller.ContentApiTest  : No active profile set, falling back to 1 default profile: "default"
+    2025-12-26T09:42:51.441+09:00  WARN 23272 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+    Using generated security password: ca1b3fa6-8413-4f3b-bf69-f94d0097872f
+
+    This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+    2025-12-26T09:42:51.531+09:00  INFO 23272 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3bd623b2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e3e01b, org.springframework.security.web.context.SecurityContextHolderFilter@172b39c3, org.springframework.security.web.header.HeaderWriterFilter@145baec6, org.springframework.web.filter.CorsFilter@6ef99da8, org.springframework.security.web.csrf.CsrfFilter@1bf6c568, org.springframework.security.web.authentication.logout.LogoutFilter@2d2325d0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7657cc5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4b0fdbd7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@12a96a6e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2dda3edf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a5b73cb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26b78c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18e8003a, org.springframework.security.web.access.ExceptionTranslationFilter@4d2eb4c6, org.springframework.security.web.access.intercept.AuthorizationFilter@45c812b4]
+    2025-12-26T09:42:51.712+09:00  INFO 23272 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2025-12-26T09:42:51.714+09:00  INFO 23272 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2025-12-26T09:42:51.716+09:00  INFO 23272 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+    2025-12-26T09:42:51.747+09:00  INFO 23272 --- [    Test worker] c.kz.magazine.controller.ContentApiTest  : Started ContentApiTest in 3.358 seconds (process running for 21.55)
+
+ContentApiTest > Get Contents List - Success STANDARD_OUT
+    2025-12-26T09:42:52.125+09:00  WARN 23272 --- [    Test worker] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/contents' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+
+ContentApiTest > Get Contents List - Success PASSED
+
+ContentApiTest > Get Content Detail - Success PASSED
+
+ContentApiTest > Delete Content - Success PASSED
+
+ContentApiTest > Create Content - Success PASSED
+
+ContentApiTest > Update Content - Success PASSED
+
+FileApiTest STANDARD_OUT
+    2025-12-26T09:42:53.463+09:00  INFO 23272 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kz.magazine.controller.FileApiTest]: FileApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2025-12-26T09:42:53.519+09:00  INFO 23272 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kz.magazine.MagazineApplication for test class com.kz.magazine.controller.FileApiTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+     :: Spring Boot ::                (v3.2.0)
+
+    2025-12-26T09:42:53.643+09:00  INFO 23272 --- [    Test worker] com.kz.magazine.controller.FileApiTest   : Starting FileApiTest using Java 17.0.13 with PID 23272 (started by hereisjeju in D:\berodu\SORIN\project\Newsletter\backend)
+    2025-12-26T09:42:53.644+09:00  INFO 23272 --- [    Test worker] com.kz.magazine.controller.FileApiTest   : No active profile set, falling back to 1 default profile: "default"
+    2025-12-26T09:42:54.524+09:00  WARN 23272 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+    Using generated security password: ca21d758-9507-4195-96dc-a41e8cc34d5e
+
+    This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+    2025-12-26T09:42:54.578+09:00  INFO 23272 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15516e5a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28336feb, org.springframework.security.web.context.SecurityContextHolderFilter@604c8ed5, org.springframework.security.web.header.HeaderWriterFilter@7effdd04, org.springframework.web.filter.CorsFilter@3035b9e6, org.springframework.security.web.csrf.CsrfFilter@1baab1b1, org.springframework.security.web.authentication.logout.LogoutFilter@2d3c0f89, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ff4ed56, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2bc7e895, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@f75843e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@475f141a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e259c54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bd01716, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11c80834, org.springframework.security.web.access.ExceptionTranslationFilter@1c833e78, org.springframework.security.web.access.intercept.AuthorizationFilter@72f9e4c7]
+    2025-12-26T09:42:54.602+09:00  INFO 23272 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2025-12-26T09:42:54.603+09:00  INFO 23272 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2025-12-26T09:42:54.606+09:00  INFO 23272 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+    2025-12-26T09:42:54.617+09:00  INFO 23272 --- [    Test worker] com.kz.magazine.controller.FileApiTest   : Started FileApiTest in 1.089 seconds (process running for 24.42)
+
+FileApiTest > Upload File - Success STANDARD_OUT
+    2025-12-26T09:42:54.653+09:00  WARN 23272 --- [    Test worker] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/files/upload' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+
+FileApiTest > Upload File - Success PASSED
+
+AuditLogServiceTest > logAction_Success() PASSED
+
+ContentViewServiceTest > incrementViewCount_Deduped() PASSED
+
+ContentViewServiceTest > incrementViewCount_Success() PASSED
+
+ReactionServiceTest > toggleLike_AddLike() PASSED
+
+ReactionServiceTest > toggleLike_RemoveLike() PASSED
+
+HtmlSanitizerTest > Should allow valid links but enforce nofollow PASSED
+
+HtmlSanitizerTest > Should remove script tags PASSED
+
+HtmlSanitizerTest > Should allow safe tags and attributes PASSED
+
+HtmlSanitizerTest > Should allow Youtube iframe PASSED
+
+2025-12-26T09:42:56.032+09:00  INFO 23272 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26T09:42:56.036+09:00  INFO 23272 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-26T09:42:56.203+09:00  INFO 23272 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-26T09:42:56.209+09:00  INFO 23272 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26T09:42:56.211+09:00  INFO 23272 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-12-26T09:42:56.322+09:00  INFO 23272 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+> Task :test FAILED
+
+17 tests completed, 1 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///D:/berodu/SORIN/project/Newsletter/backend/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.5/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 32s
+4 actionable tasks: 3 executed, 1 up-to-date

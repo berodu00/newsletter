@@ -1,0 +1,7 @@
+package com.kz.magazine.repository;
+
+import com.kz.magazine.entity.AuditLog;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AuditLogRepository extends JpaRepository<AuditLog, Long> {
+}

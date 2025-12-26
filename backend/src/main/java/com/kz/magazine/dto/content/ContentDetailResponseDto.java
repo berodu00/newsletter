@@ -22,7 +22,8 @@ public class ContentDetailResponseDto {
     private Long ratingCount;
     private Double averageRating;
     private List<String> hashtags;
-    // TODO: Add Reaction info later
+    private String youtubeUrl;
+    private String instagramUrl;
 
     public static ContentDetailResponseDto from(Content content, List<String> hashtags) {
         return ContentDetailResponseDto.builder()
@@ -30,7 +31,7 @@ public class ContentDetailResponseDto {
                 .title(content.getTitle())
                 .bodyHtml(content.getBodyHtml())
                 .categoryName(content.getCategory().getCategoryName())
-                .status(content.getStatus())
+                .status(content.getStatus().name())
                 .authorName(content.getAuthor().getName())
                 .department(content.getAuthor().getDepartment())
                 .publishedAt(content.getPublishedAt())
@@ -38,6 +39,8 @@ public class ContentDetailResponseDto {
                 .ratingCount(content.getRatingCount())
                 .averageRating(content.getAverageRating() != null ? content.getAverageRating().doubleValue() : 0.0)
                 .hashtags(hashtags)
+                .youtubeUrl(content.getYoutubeUrl())
+                .instagramUrl(content.getInstagramUrl())
                 .build();
     }
 }

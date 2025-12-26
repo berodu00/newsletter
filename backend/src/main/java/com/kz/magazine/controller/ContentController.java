@@ -3,7 +3,11 @@ package com.kz.magazine.controller;
 import com.kz.magazine.dto.content.ContentDetailResponseDto;
 import com.kz.magazine.dto.content.ContentFilterDto;
 import com.kz.magazine.dto.content.ContentResponseDto;
+
+import com.kz.magazine.entity.User;
+import com.kz.magazine.repository.UserRepository;
 import com.kz.magazine.service.ContentService;
+import com.kz.magazine.service.ContentViewService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -24,6 +28,8 @@ import org.springframework.web.bind.annotation.*;
 public class ContentController {
 
     private final ContentService contentService;
+    private final ContentViewService contentViewService;
+    private final UserRepository userRepository;
 
     @GetMapping
     public ResponseEntity<Page<ContentResponseDto>> getContents(
@@ -33,7 +39,20 @@ public class ContentController {
     }
 
     @GetMapping("/{contentId}")
-    public ResponseEntity<ContentDetailResponseDto> getContent(@PathVariable Long contentId) {
+    public ResponseEntity<ContentDetailResponseDto> getContent(
+            @PathVariable Long contentId,
+            @AuthenticationPrincipal UserDetails userDetails) {
+
+        Long userId = null;
+        if (userDetails != null) {
+            User user = userRepository.findByUsername(userDetails.getUsername()).orElse(null);
+            if (user != null) {
+                userId = user.getUserId();
+            }
+        }
+
+        contentViewService.incrementViewCount(contentId, userId);
+
         return ResponseEntity.ok(contentService.getContent(contentId));
     }
 
@@ -49,8 +68,9 @@ public class ContentController {
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ContentDetailResponseDto> updateContent(
             @PathVariable Long contentId,
-            @RequestBody ContentUpdateRequestDto request) {
-        return ResponseEntity.ok(contentService.updateContent(contentId, request));
+            @RequestBody ContentUpdateRequestDto request,
+            @AuthenticationPrincipal UserDetails userDetails) {
+        return ResponseEntity.ok(contentService.updateContent(contentId, request, userDetails.getUsername()));
     }
 
     @DeleteMapping("/{contentId}")

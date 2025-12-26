@@ -31,4 +31,8 @@ public class ContentCreateRequestDto {
     private String status = "DRAFT";
 
     private Long thumbnailFileId;
+
+    private String youtubeUrl;
+
+    private String instagramUrl;
 }

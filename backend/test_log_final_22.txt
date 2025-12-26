@@ -1,0 +1,50 @@
+
+> Task :compileJava
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:61: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private Long viewCount = 0L;
+                 ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:68: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private List<ContentHashtag> hashtags = new ArrayList<>();
+                                 ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:88: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private Long ratingCount = 0L;
+                 ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:89: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private Long ratingSum = 0L;
+                 ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:90: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private BigDecimal averageRating = BigDecimal.ZERO;
+                       ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\User.java:37: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private boolean isActive = true;
+                    ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\service\EventService.java:66: error: incompatible types: Long cannot be converted to String
+        auditLogService.logAction(user.getUserId(), "CREATE", "EVENT", savedEvent.getId(), null, savedEvent.toString());
+                                                ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\service\EventService.java:101: error: incompatible types: Long cannot be converted to String
+        auditLogService.logAction(user.getUserId(), "UPDATE", "EVENT", event.getId(), oldEventStr, event.toString());
+                                                ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\service\EventService.java:111: error: incompatible types: Long cannot be converted to String
+        auditLogService.logAction(user.getUserId(), "DELETE", "EVENT", event.getId(), null, null);
+                                                ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\service\EventService.java:156: error: incompatible types: Long cannot be converted to String
+        auditLogService.logAction(user.getUserId(), "DRAW", "EVENT", eventId, null, "Count: " + count);
+                                                ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors
+6 warnings
+
+> Task :compileJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 6s
+1 actionable task: 1 executed

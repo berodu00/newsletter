@@ -9,7 +9,10 @@ import com.kz.magazine.dto.content.ContentResponseDto;
 import com.kz.magazine.dto.content.ContentUpdateRequestDto;
 import com.kz.magazine.security.JwtAuthenticationFilter;
 import com.kz.magazine.security.JwtTokenProvider;
+import com.kz.magazine.security.JwtTokenProvider;
 import com.kz.magazine.service.ContentService;
+import com.kz.magazine.service.ContentViewService;
+import com.kz.magazine.repository.UserRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,6 +55,12 @@ class ContentApiTest {
         @MockBean
         private JwtTokenProvider jwtTokenProvider;
 
+        @MockBean
+        private ContentViewService contentViewService;
+
+        @MockBean
+        private UserRepository userRepository;
+
         @Test
         @DisplayName("Get Contents List - Success")
         @WithMockUser
@@ -92,6 +101,8 @@ class ContentApiTest {
                                 .bodyHtml("<p>Body</p>")
                                 .categoryName("General")
                                 .hashtags(List.of("Tag1", "Tag2"))
+                                .youtubeUrl("https://youtube.com/test")
+                                .instagramUrl("https://instagram.com/test")
                                 .build();
 
                 given(contentService.getContent(1L)).willReturn(dto);
@@ -101,7 +112,9 @@ class ContentApiTest {
                                 .with(SecurityMockMvcRequestPostProcessors.csrf()))
                                 .andExpect(status().isOk())
                                 .andExpect(jsonPath("$.title").value("Detail Title"))
-                                .andExpect(jsonPath("$.hashtags[0]").value("Tag1"));
+                                .andExpect(jsonPath("$.hashtags[0]").value("Tag1"))
+                                .andExpect(jsonPath("$.youtubeUrl").value("https://youtube.com/test"))
+                                .andExpect(jsonPath("$.instagramUrl").value("https://instagram.com/test"));
         }
 
         @Test
@@ -114,10 +127,12 @@ class ContentApiTest {
                 request.setBodyHtml("<p>Body</p>");
                 request.setCategoryName("General");
                 request.setHashtags(List.of("NewTag"));
+                request.setYoutubeUrl("https://youtube.com/new");
 
                 ContentDetailResponseDto response = ContentDetailResponseDto.builder()
                                 .contentId(2L)
                                 .title("New Content")
+                                .youtubeUrl("https://youtube.com/new")
                                 .build();
 
                 given(contentService.createContent(any(ContentCreateRequestDto.class), any())).willReturn(response);
@@ -129,7 +144,8 @@ class ContentApiTest {
                                 .contentType("application/json")
                                 .content(mapper.writeValueAsString(request)))
                                 .andExpect(status().isOk())
-                                .andExpect(jsonPath("$.title").value("New Content"));
+                                .andExpect(jsonPath("$.title").value("New Content"))
+                                .andExpect(jsonPath("$.youtubeUrl").value("https://youtube.com/new"));
         }
 
         @Test
@@ -145,7 +161,7 @@ class ContentApiTest {
                                 .title("Updated Title")
                                 .build();
 
-                given(contentService.updateContent(any(Long.class), any(ContentUpdateRequestDto.class)))
+                given(contentService.updateContent(any(Long.class), any(ContentUpdateRequestDto.class), any()))
                                 .willReturn(response);
 
                 // When & Then

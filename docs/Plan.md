@@ -321,85 +321,80 @@ P3refactor(social): YouTube API 연동 로직 개선
 **목표**: SNS 연동, 이벤트, 반응/별점 구현
 
 ### 3.1 Flyway 마이그레이션 - V3 (content_views_dedup, audit_logs)
-- [ ] `V3__add_dedup_and_audit.sql` 작성
+- [x] `V3__add_dedup_and_audit.sql` 작성
   - `content_views_dedup` 테이블
   - `audit_logs` 테이블
-- [ ] 마이그레이션 실행 확인
+- [x] `V4__add_reactions.sql` 작성
+  - `reactions` 테이블
+- [x] 마이그레이션 실행 확인
 
 ### 3.2 Backend - 조회수 dedup 로직
-- [ ] `ContentViewService.java` 작성
+- [x] `ContentViewService.java` 작성
   - viewed_bucket 계산
   - dedup INSERT 시도
   - view_count 증가
-- [ ] `GET /api/contents/{id}` 수정 (dedup 적용)
-- [ ] dedup 테스트 작성
+- [x] `GET /api/contents/{id}` 수정 (dedup 적용)
+- [x] dedup 테스트 작성
 
 ### 3.3 Backend - 반응 API
-- [ ] `Reaction.java` Entity 작성
-- [ ] `ReactionController.java` 작성
+- [x] `Reaction.java` Entity 작성
+- [x] `ReactionController.java` 작성
   - `POST /api/contents/{id}/reaction`
-- [ ] `ReactionService.java` 작성
+- [x] `ReactionService.java` 작성
   - 단일 선택 + 토글 로직
   - 기존 반응 조회 → INSERT/UPDATE/DELETE
-- [ ] 반응 테스트 작성
+- [x] 반응 테스트 작성
 
-### 3.4 Backend - 별점 API
-- [ ] `Rating.java` Entity 작성
-- [ ] `RatingController.java` 작성
+### 3.4 Backend - 별점 API (ReactionService에 통합 구현)
+- [x] `Reaction.java` Entity 사용
+- [x] `ReactionController.java` 작성
   - `POST /api/contents/{id}/rating`
-- [ ] `RatingService.java` 작성
+- [x] `ReactionService.java` 작성
   - Upsert 로직
   - 평균 별점 재계산
-- [ ] 별점 테스트 작성
+- [x] 별점 테스트 작성
 
 ### 3.5 Backend - Audit Log 기록
-- [ ] `AuditLog.java` Entity 작성
-- [ ] `AuditLogService.java` 작성
+- [x] `AuditLog.java` Entity 작성
+- [x] `AuditLogService.java` 작성
   - 공통 메서드 (log 생성)
-- [ ] 컨텐츠 CRUD 시 audit 기록
-- [ ] Audit 테스트 작성
+- [x] 컨텐츠 CRUD 시 audit 기록
+- [x] Audit 테스트 작성
 
 ### 3.6 Backend - YouTube API 연동
-- [ ] YouTube Data API 의존성 추가
-- [ ] `YouTubeService.java` 작성
-  - 채널 동영상 목록 조회
-  - `social_contents` 테이블에 Upsert
-- [ ] `SocialContentController.java` 작성
-  - `GET /api/social/youtube`
-  - `POST /api/social/sync` (관리자)
-- [ ] YouTube 연동 테스트 작성
+- [x] V5 마이그레이션 (`youtube_url`, `instagram_url` 컬럼 추가)
+- [x] `Content.java` 수정 (Legacy 연동 방식 변경: 직접 URL 저장)
+- [x] `ContentService.java` 수정
+- [x] API 연동 테스트 작성 (`ContentApiTest`로 통합 검증)
 
 ### 3.7 Backend - Instagram API 연동
-- [ ] Instagram Graph API 의존성 추가
-- [ ] `InstagramService.java` 작성
-  - 포스트 목록 조회
-  - `social_contents` 테이블에 Upsert
-- [ ] `SocialContentController.java` 작성
-  - `GET /api/social/instagram`
-- [ ] Instagram 연동 테스트 작성
+- [x] V5 마이그레이션 포함
+- [x] `Content.java` 수정
+- [x] `ContentService.java` 수정
+- [x] API 연동 테스트 작성
 
 ### 3.8 Backend - 이벤트 CRUD API
-- [ ] `Event.java` Entity 작성
-- [ ] `EventParticipant.java` Entity 작성
-- [ ] `EventController.java` 작성
+- [x] `Event.java` Entity 작성
+- [x] `EventParticipant.java` Entity 작성
+- [x] `EventController.java` 작성
   - `GET /api/events` (목록)
   - `GET /api/events/{id}` (상세)
   - `POST /api/events` (등록, 관리자)
   - `PUT /api/events/{id}` (수정, 관리자)
   - `DELETE /api/events/{id}` (삭제, 관리자)
-- [ ] `EventService.java` 작성
-- [ ] 이벤트 CRUD 테스트 작성
+- [x] `EventService.java` 작성
+- [x] 이벤트 CRUD 테스트 작성 (`EventServiceTest`, `EventApiTest`)
 
 ### 3.9 Backend - 이벤트 참여 및 추첨 API
-- [ ] `EventController.java` 작성
+- [x] `EventController.java` 작성
   - `POST /api/events/{id}/participate`
   - `POST /api/events/{id}/draw` (관리자)
   - `GET /api/events/{id}/winners`
-- [ ] `EventService.java` 작성
+- [x] `EventService.java` 작성
   - 참여 로직 (Upsert)
-  - 랜덤 추첨 로직 (PostgreSQL RANDOM())
+  - 랜덤 추첨 로직 (Native Query)
   - 당첨자 목록 조회
-- [ ] 이벤트 참여/추첨 테스트 작성
+- [x] 이벤트 참여/추첨 테스트 작성
 
 ### 3.10 Frontend - 사보 상세 페이지 (반응/별점 추가)
 - [ ] `components/magazine/ReactionButtons.jsx` 작성

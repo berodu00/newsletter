@@ -113,7 +113,10 @@ kz-magazine-platform/
 │   │   └── db/migration/
 │   │       ├── V1__create_initial_schema.sql
 │   │       ├── V2__add_audit_logs.sql
-│   │       └── V3__add_content_views_dedup.sql
+│   │       ├── V3__add_content_views_dedup.sql
+      ├── V4__add_reactions.sql
+      ├── V5__add_sns_columns.sql
+      └── V6__add_updated_by_to_events.sql
 │   └── build.gradle
 ├── frontend/
 │   ├── src/
@@ -379,6 +382,7 @@ CREATE TABLE events (
   created_by      BIGINT REFERENCES users(user_id),
   created_at      TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at      TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_by      BIGINT REFERENCES users(user_id),
   deleted_at      TIMESTAMP,
   deleted_by      BIGINT REFERENCES users(user_id),
   CONSTRAINT chk_event_period CHECK (end_at > start_at),

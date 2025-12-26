@@ -1,0 +1,47 @@
+
+> Task :compileJava
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:63: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private Long viewCount = 0L;
+                 ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:70: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private List<ContentHashtag> hashtags = new ArrayList<>();
+                                 ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:90: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private Long ratingCount = 0L;
+                 ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:91: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private Long ratingSum = 0L;
+                 ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\entity\Content.java:92: warning: @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+    private BigDecimal averageRating = BigDecimal.ZERO;
+                       ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\dto\content\ContentResponseDto.java:34: error: incompatible types: ContentStatus cannot be converted to String
+                .status(content.getStatus())
+                                         ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\dto\content\ContentDetailResponseDto.java:34: error: incompatible types: ContentStatus cannot be converted to String
+                .status(content.getStatus())
+                                         ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\dto\ContentDto.java:33: error: incompatible types: ContentStatus cannot be converted to String
+                    .status(content.getStatus())
+                                             ^
+D:\berodu\SORIN\project\Newsletter\backend\src\main\java\com\kz\magazine\dto\ContentDto.java:67: error: incompatible types: ContentStatus cannot be converted to String
+                    .status(content.getStatus())
+                                             ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors
+5 warnings
+
+> Task :compileJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 5s
+1 actionable task: 1 executed

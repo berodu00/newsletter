@@ -18,4 +18,6 @@ public class ContentUpdateRequestDto {
     private List<String> hashtags;
     private String status;
     private Long thumbnailFileId;
+    private String youtubeUrl;
+    private String instagramUrl;
 }
