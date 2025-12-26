@@ -1,6 +1,8 @@
 import React from 'react';
 import { Card, Badge } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const ContentCard = ({ content, onClick }) => {
   const navigate = useNavigate();
@@ -25,11 +27,15 @@ const ContentCard = ({ content, onClick }) => {
       {/* Thumbnail Placeholder logic if URL is empty */}
       <div style={{ height: '200px', overflow: 'hidden', backgroundColor: '#f0f0f0' }}>
         {content.thumbnailUrl ? (
-          <Card.Img
-            variant="top"
+          <LazyLoadImage
+            effect="blur"
             src={content.thumbnailUrl}
             alt={content.title}
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            wrapperProps={{
+              // Helps style the wrapper div that LazyLoadImage creates
+              style: { width: '100%', height: '100%', display: 'block' }
+            }}
           />
         ) : (
           <div className="d-flex align-items-center justify-content-center h-100 text-muted">

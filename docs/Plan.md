@@ -513,62 +513,62 @@ P3refactor(social): YouTube API 연동 로직 개선
 - [x] 통계 배치 테스트 작성
 
 ### 4.8 Frontend - 관리자 대시보드
-- [ ] `pages/admin/Dashboard.jsx` 작성
+- [x] `pages/admin/Dashboard.jsx` 작성
   - Recharts로 차트 구현
   - 방문자 추이 그래프
   - 카테고리별 통계 파이 차트
   - TOP 10 테이블
-- [ ] 대시보드 API 연동
-- [ ] 실시간 데이터 업데이트
+- [x] 대시보드 API 연동
+- [x] 실시간 데이터 업데이트
 
 ### 4.9 Frontend - 아이디어 제안 페이지
-- [ ] `pages/Ideas.jsx` 작성
+- [x] `pages/Ideas.jsx` 작성
   - 제안 폼 (제목, 설명)
   - 내 제안 목록
   - 상태 표시 (PENDING, REVIEWED, ACCEPTED, REJECTED)
-- [ ] 아이디어 API 연동
+- [x] 아이디어 API 연동
 
 ### 4.10 Frontend - 관리자 아이디어 검토
-- [ ] `pages/admin/IdeaManagement.jsx` 작성
+- [x] `pages/admin/IdeaManagement.jsx` 작성
   - 전체 제안 목록
   - 검토 폼 (상태 변경, 코멘트)
-- [ ] 아이디어 검토 API 연동
+- [x] 아이디어 검토 API 연동
 
 ### 4.11 Frontend - 관리자 팝업 관리
-- [ ] `pages/admin/PopupManagement.jsx` 작성
+- [x] `pages/admin/PopupManagement.jsx` 작성
   - 팝업 목록 테이블
   - 등록/수정/삭제
-- [ ] `components/admin/PopupForm.jsx` 작성
-- [ ] 팝업 CRUD API 연동
+- [x] `components/admin/PopupForm.jsx` 작성
+- [x] 팝업 CRUD API 연동
 
 ### 4.12 Frontend - 메인 페이지 팝업 모달
-- [ ] `components/common/PopupModal.jsx` 작성
+- [x] `components/common/PopupModal.jsx` 작성
   - 팝업 목록 조회
   - 모달로 표시
   - "오늘 하루 보지 않기" 기능 (localStorage)
-- [ ] 팝업 API 연동
+- [x] 팝업 API 연동
 
 ### 4.13 Frontend - 이미지 Lazy Loading
-- [ ] `react-lazyload` 설치
-- [ ] ContentCard, YouTubeGrid, InstagramGrid에 적용
+- [x] `react-lazy-load-image-component` 설치
+- [x] ContentCard, YouTubeGrid, InstagramGrid에 적용
 
 ### 4.14 Frontend - 번들 최적화
-- [ ] Code Splitting (React.lazy)
+- [x] Code Splitting (React.lazy)
   - 관리자 페이지 분리
   - 소셜 페이지 분리
-- [ ] `npm run build` 실행
-- [ ] 번들 크기 확인
+- [x] `npm run build` 실행
+- [x] 번들 크기 확인
 
 ### 4.15 Frontend - Naver Analytics 연동
-- [ ] Naver Analytics 스크립트 추가 (index.html)
-- [ ] 페이지 뷰 이벤트 추적
+- [x] Naver Analytics 스크립트 추가 (index.html)
+- [x] 페이지 뷰 이벤트 추적
 
 ### 4.16 Phase 4 통합 테스트
-- [ ] 관리자 대시보드 통계 정상 표시 확인
-- [ ] 전문 검색 성능 확인
-- [ ] 해시태그 재집계 배치 실행 확인
-- [ ] 방문자 로그 배치 실행 확인
-- [ ] 팝업 모달 정상 표시 확인
+- [x] 관리자 대시보드 통계 정상 표시 확인
+- [x] 전문 검색 성능 확인
+- [x] 해시태그 재집계 배치 실행 확인
+- [x] 방문자 로그 배치 실행 확인
+- [x] 팝업 모달 정상 표시 확인
 
 ---
 
