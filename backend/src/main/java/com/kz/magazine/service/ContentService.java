@@ -43,6 +43,7 @@ public class ContentService {
 
     private final UserRepository userRepository;
     private final AuditLogService auditLogService;
+    private final com.kz.magazine.repository.RatingRepository ratingRepository;
 
     public Page<ContentResponseDto> getContents(ContentFilterDto filter, Pageable pageable) {
         Page<Content> contents;
@@ -121,26 +122,25 @@ public class ContentService {
         Integer userRating = null;
 
         if (userId != null) {
+            // Fetch User Reaction (Like, etc)
             List<com.kz.magazine.entity.Reaction> userReactions = reactionRepository
                     .findByContent_ContentIdAndUser_UserId(contentId, userId);
 
             for (com.kz.magazine.entity.Reaction r : userReactions) {
-                if ("RATING".equals(r.getReactionType())) {
-                    userRating = r.getRatingValue();
-                } else {
+                if (!"RATING".equals(r.getReactionType())) {
                     userReaction = r.getReactionType();
                 }
             }
+
+            // Fetch User Rating
+            com.kz.magazine.entity.Rating r = ratingRepository.findByContent_ContentIdAndUser_UserId(contentId, userId)
+                    .orElse(null);
+            if (r != null) {
+                userRating = r.getRatingValue();
+            }
         }
 
-        // User Rating - Need RatingRepository? Or calc?
-        // See if RatingRepository exists. If not, maybe use explicit query or loop?
-        // Assuming RatingRepository exists or I need to inject it.
-        // I'll assume explicit helper method if repo not injected.
-        // Wait, I need to inject RatingRepository.
-
         return ContentDetailResponseDto.from(content, hashtags, reactionCounts, userReaction, userRating);
-
     }
 
     private List<com.kz.magazine.entity.Reaction> reactionData(Long contentId) {
@@ -260,5 +260,85 @@ public class ContentService {
             result.add(hashtag.getHashtagName());
         }
         return result;
+    }
+
+    @Transactional
+    public com.kz.magazine.dto.content.ContentRatingResponseDto addRating(Long contentId, Integer ratingValue,
+            String username) {
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new IllegalArgumentException("User not found: " + username));
+        Content content = contentRepository.findById(contentId)
+                .orElseThrow(() -> new IllegalArgumentException("Content not found: " + contentId));
+
+        com.kz.magazine.entity.Rating rating = ratingRepository
+                .findByContent_ContentIdAndUser_UserId(contentId, user.getUserId())
+                .orElse(new com.kz.magazine.entity.Rating(content, user, ratingValue));
+
+        rating.setRatingValue(ratingValue);
+        ratingRepository.save(rating);
+
+        // Update Content aggregates
+        Double avg = ratingRepository.getAverageRating(contentId);
+        long count = ratingRepository.countByContent_ContentId(contentId);
+
+        content.setAverageRating(java.math.BigDecimal.valueOf(avg != null ? avg : 0.0));
+        content.setRatingCount(count);
+        return com.kz.magazine.dto.content.ContentRatingResponseDto.builder()
+                .averageRating(avg != null ? avg : 0.0)
+                .message("별점 등록 완료")
+                .build();
+    }
+
+    @Transactional
+    public com.kz.magazine.dto.content.ContentReactionResponseDto toggleReaction(Long contentId, String reactionType,
+            String username) {
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new IllegalArgumentException("User not found: " + username));
+        Content content = contentRepository.findById(contentId)
+                .orElseThrow(() -> new IllegalArgumentException("Content not found: " + contentId));
+
+        com.kz.magazine.entity.Reaction existing = reactionRepository
+                .findByContent_ContentIdAndUser_UserId(contentId, user.getUserId())
+                .stream().filter(r -> !r.getReactionType().equals("RATING")).findFirst().orElse(null);
+
+        String action;
+        String currentReaction;
+
+        if (existing != null) {
+            if (existing.getReactionType().equals(reactionType)) {
+                // Remove (Toggle OFF)
+                reactionRepository.delete(existing);
+                action = "removed";
+                currentReaction = null;
+            } else {
+                // Change
+                existing.setReactionType(reactionType);
+                action = "changed";
+                currentReaction = reactionType;
+            }
+        } else {
+            // Add
+            com.kz.magazine.entity.Reaction newReaction = new com.kz.magazine.entity.Reaction();
+            newReaction.setContent(content);
+            newReaction.setUser(user);
+            newReaction.setReactionType(reactionType);
+            reactionRepository.save(newReaction);
+            action = "added";
+            currentReaction = reactionType;
+        }
+
+        // Recalculate counts
+        List<com.kz.magazine.entity.Reaction> allReactions = reactionRepository.findByContent_ContentId(contentId);
+        java.util.Map<String, Integer> reactionCounts = new java.util.HashMap<>();
+        allReactions.stream()
+                .filter(r -> !"RATING".equals(r.getReactionType()))
+                .forEach(r -> reactionCounts.put(r.getReactionType(),
+                        reactionCounts.getOrDefault(r.getReactionType(), 0) + 1));
+
+        return com.kz.magazine.dto.content.ContentReactionResponseDto.builder()
+                .action(action)
+                .currentReaction(currentReaction)
+                .reactions(reactionCounts)
+                .build();
     }
 }

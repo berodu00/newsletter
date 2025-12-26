@@ -338,7 +338,7 @@ P3refactor(social): YouTube API 연동 로직 개선
 
 ### 3.3 Backend - 반응 API
 - [x] `Reaction.java` Entity 작성
-- [x] `ReactionController.java` 작성
+- [x] `ReactionController.java` 작성 (삭제됨: ContentController 통합)
   - `POST /api/contents/{id}/reaction`
 - [x] `ReactionService.java` 작성
   - 단일 선택 + 토글 로직
@@ -347,7 +347,7 @@ P3refactor(social): YouTube API 연동 로직 개선
 
 ### 3.4 Backend - 별점 API (ReactionService에 통합 구현)
 - [x] `Reaction.java` Entity 사용
-- [x] `ReactionController.java` 작성
+- [x] `ReactionController.java` 작성 (삭제됨: ContentController 통합)
   - `POST /api/contents/{id}/rating`
 - [x] `ReactionService.java` 작성
   - Upsert 로직
@@ -723,3 +723,18 @@ P3refactor(social): YouTube API 연동 로직 개선
 **문서 버전**: v1.3  
 **최종 수정일**: 2025-12-26  
 **작성자**: Claude (Anthropic)
+
+---
+
+## Next Session Note
+**Date**: 2025-12-26
+**Last Action**: Fixed critical bugs in Login and Rating/Reaction persistence. Verified via browser.
+**Status**: Backend running on port 8080. All Phase 1-4 tests passing.
+**Changes**:
+- `ReactionController` deleted (logic moved to `ContentController`).
+- `RatingRepository` added `countByContent_ContentId`.
+- Login logic fixed (hardcoded email bug resolved).
+**TODO**: 
+- Proceed with Phase 5.16 Deployment Scripts.
+- Or consider Phase 5.19 Manual Browser Verification complete.
+

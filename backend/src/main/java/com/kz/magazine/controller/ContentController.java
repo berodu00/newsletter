@@ -82,4 +82,21 @@ public class ContentController {
         contentService.deleteContent(contentId, userDetails.getUsername());
         return ResponseEntity.noContent().build();
     }
+
+    @PostMapping("/{contentId}/rating")
+    public ResponseEntity<com.kz.magazine.dto.content.ContentRatingResponseDto> addRating(
+            @PathVariable Long contentId,
+            @RequestBody com.kz.magazine.dto.content.ContentRatingRequestDto request,
+            @AuthenticationPrincipal UserDetails userDetails) {
+        return ResponseEntity.ok(contentService.addRating(contentId, request.getRating(), userDetails.getUsername()));
+    }
+
+    @PostMapping("/{contentId}/reaction")
+    public ResponseEntity<com.kz.magazine.dto.content.ContentReactionResponseDto> toggleReaction(
+            @PathVariable Long contentId,
+            @RequestBody com.kz.magazine.dto.content.ContentReactionRequestDto request,
+            @AuthenticationPrincipal UserDetails userDetails) {
+        return ResponseEntity
+                .ok(contentService.toggleReaction(contentId, request.getReactionType(), userDetails.getUsername()));
+    }
 }
