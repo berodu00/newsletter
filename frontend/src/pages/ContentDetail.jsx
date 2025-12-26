@@ -66,7 +66,7 @@ const ContentDetail = () => {
                 <Badge bg="primary" className="mb-2">{content.categoryName}</Badge>
                 <h1 className="fw-bold mb-3">{content.title}</h1>
                 <div className="text-muted small">
-                    <span className="me-3">{content.author.name}</span>
+                    <span className="me-3">{content.authorName}</span>
                     <span className="me-3">{formattedDate}</span>
                     <span>조회 {content.viewCount}</span>
                 </div>

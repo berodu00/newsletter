@@ -19,6 +19,11 @@ public class AuthController {
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody Map<String, String> request) {
         String username = request.get("username");
+
+        if (username == null || username.trim().isEmpty()) {
+            return ResponseEntity.badRequest().body("Username cannot be empty");
+        }
+
         // String password = request.get("password"); // Mock check if needed
 
         String role = "USER";

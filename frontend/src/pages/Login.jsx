@@ -12,6 +12,11 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if (!username.trim() || !password.trim()) {
+            alert('아이디와 비밀번호를 모두 입력해주세요.');
+            return;
+        }
+
         try {
             await login(username, password);
             navigate('/');

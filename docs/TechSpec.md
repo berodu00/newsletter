@@ -120,7 +120,10 @@ kz-magazine-platform/
 │   │       ├── V8__add_daily_visit_log.sql
 │   │       ├── V9__update_visitor_log_schema.sql
 │   │       ├── V10__create_dept_stats.sql
-│   │       └── V11__add_user_deleted_at.sql
+│   │       ├── V11__add_user_deleted_at.sql
+│   │       ├── V12__add_test_data.sql
+│   │       ├── V13__fix_reactions_schema.sql
+│   │       └── V14__delete_invalid_users.sql
 │   └── build.gradle
 ├── frontend/
 │   ├── src/
@@ -520,8 +523,12 @@ OAuth 2.0 로그인
 ```json
 {
   "code": "string",
-  "redirectUri": "string"
+  "redirectUri": "string",
+  "username": "string" // (Optional) Dev/Test Login
 }
+
+**Validation**:
+- `username`: Not Empty (Empty string returns 400 Bad Request)
 ```
 
 **Response (200)**:
