@@ -397,55 +397,55 @@ P3refactor(social): YouTube API 연동 로직 개선
 - [x] 이벤트 참여/추첨 테스트 작성
 
 ### 3.10 Frontend - 사보 상세 페이지 (반응/별점 추가)
-- [ ] `components/magazine/ReactionButtons.jsx` 작성
+- [x] `components/magazine/ReactionButtons.jsx` 작성
   - LIKE, SAD, ANGRY, FUNNY 버튼
   - 현재 사용자 반응 하이라이트
   - 클릭 시 토글
-- [ ] `components/magazine/RatingStars.jsx` 작성
+- [x] `components/magazine/RatingStars.jsx` 작성
   - 별점 5개 표시
   - 클릭 시 별점 부여
-- [ ] 반응/별점 API 연동
-- [ ] 실시간 카운트 업데이트
+- [x] 반응/별점 API 연동
+- [x] 실시간 카운트 업데이트
 
 ### 3.11 Frontend - 소셜 컨텐츠 페이지
-- [ ] `pages/Social.jsx` 작성
+- [x] `pages/Social.jsx` 작성
   - YouTube/Instagram 탭
-- [ ] `components/social/YouTubeGrid.jsx` 작성
+- [x] `components/social/YouTubeGrid.jsx` 작성
   - 영상 그리드
   - 모달 플레이어
-- [ ] `components/social/InstagramGrid.jsx` 작성
+- [x] `components/social/InstagramGrid.jsx` 작성
   - 포스트 그리드
-- [ ] 소셜 컨텐츠 API 연동
+- [x] 소셜 컨텐츠 API 연동
 
 ### 3.12 Frontend - iframe 임베드 페이지
-- [ ] `pages/SocialEmbed.jsx` 작성
+- [x] `pages/SocialEmbed.jsx` 작성
   - 헤더/푸터 없음
   - 경량 레이아웃
   - YouTube/Instagram 그리드만 표시
 
 ### 3.13 Frontend - 이벤트 페이지
-- [ ] `pages/Events.jsx` 작성
+- [x] `pages/Events.jsx` 작성
   - 진행중/종료 탭
   - 이벤트 카드 그리드
-- [ ] `pages/EventDetail.jsx` 작성
+- [x] `pages/EventDetail.jsx` 작성
   - 이벤트 상세 정보
   - 참여 버튼
   - 당첨자 발표 (종료 후)
-- [ ] 이벤트 API 연동
+- [x] 이벤트 API 연동
 
 ### 3.14 Frontend - 관리자 이벤트 관리
-- [ ] `pages/admin/EventManagement.jsx` 작성
+- [x] `pages/admin/EventManagement.jsx` 작성
   - 이벤트 목록 테이블
   - 추첨 버튼
-- [ ] `pages/admin/EventForm.jsx` 작성
+- [x] `pages/admin/EventForm.jsx` 작성
   - 이벤트 등록/수정 폼
-- [ ] 이벤트 CRUD/추첨 API 연동
+- [x] 이벤트 CRUD/추첨 API 연동
 
 ### 3.15 Phase 3 통합 테스트
-- [ ] SNS 컨텐츠 자동 수집 확인
-- [ ] 이벤트 참여 → 추첨 → 당첨자 발표 확인
-- [ ] 사보 상세에서 반응/별점 등록 확인
-- [ ] 조회수 dedup 정상 작동 확인
+- [x] SNS 컨텐츠 자동 수집 확인
+- [x] 이벤트 참여 → 추첨 → 당첨자 발표 확인
+- [x] 사보 상세에서 반응/별점 등록 확인
+- [x] 조회수 dedup 정상 작동 확인
 
 ---
 

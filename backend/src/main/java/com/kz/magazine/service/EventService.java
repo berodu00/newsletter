@@ -25,13 +25,16 @@ public class EventService {
     private final ResourceFileRepository resourceFileRepository;
     private final AuditLogService auditLogService;
 
-    public Page<Event> getEvents(Pageable pageable) {
-        // For admin, maybe show all? For now, public API shows active ones or all
-        // depending on specs.
-        // Assuming this is for public list, showing active ones.
-        // Or if admin needs all, we need separate method or filter.
-        // Spec says "GET /api/events (List)", implied for public.
-        return eventRepository.findByStatusAndDeletedAtIsNull(EventStatus.ACTIVE, pageable);
+    public Page<Event> getEvents(String status, Pageable pageable) {
+        if (status != null && !status.isEmpty()) {
+            try {
+                EventStatus eventStatus = EventStatus.valueOf(status);
+                return eventRepository.findByStatusAndDeletedAtIsNull(eventStatus, pageable);
+            } catch (IllegalArgumentException e) {
+                return eventRepository.findAll(pageable);
+            }
+        }
+        return eventRepository.findAll(pageable);
     }
 
     public Event getEvent(Long eventId) {

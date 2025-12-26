@@ -22,14 +22,15 @@ public class ContentResponseDto {
     private Long ratingCount;
     private Double averageRating;
 
+    private String youtubeUrl;
+    private String instagramUrl;
+
     public static ContentResponseDto from(Content content) {
         return ContentResponseDto.builder()
                 .contentId(content.getContentId())
                 .title(content.getTitle())
                 .summary(content.getSummary())
-                .thumbnailUrl(content.getThumbnailFile() != null ? content.getThumbnailFile().getFilePath() : null) // TODO:
-                                                                                                                    // Full
-                                                                                                                    // URL?
+                .thumbnailUrl(content.getThumbnailFile() != null ? content.getThumbnailFile().getFilePath() : null)
                 .categoryName(content.getCategory().getCategoryName())
                 .status(content.getStatus().name())
                 .authorName(content.getAuthor().getName())
@@ -37,6 +38,8 @@ public class ContentResponseDto {
                 .viewCount(content.getViewCount())
                 .ratingCount(content.getRatingCount())
                 .averageRating(content.getAverageRating() != null ? content.getAverageRating().doubleValue() : 0.0)
+                .youtubeUrl(content.getYoutubeUrl())
+                .instagramUrl(content.getInstagramUrl())
                 .build();
     }
 }

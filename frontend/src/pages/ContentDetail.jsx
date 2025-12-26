@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Container, Spinner, Badge, Button, Alert } from 'react-bootstrap';
 import api from '../services/api';
+import ReactionButtons from '../components/magazine/ReactionButtons';
+import RatingStars from '../components/magazine/RatingStars';
 
 const ContentDetail = () => {
     const { id } = useParams();
@@ -91,9 +93,27 @@ const ContentDetail = () => {
                 </Button>
             </div>
 
-            {/* Reactions/Comments Placeholder */}
-            <div className="text-center text-muted py-5 bg-light rounded">
-                <p className="mb-0">반응/댓글 기능은 준비 중입니다.</p>
+            {/* Reactions & Ratings */}
+            <div className="py-5 bg-light rounded mt-5">
+                <div className="row">
+                    <div className="col-md-6 border-end d-flex flex-column align-items-center justify-content-center">
+                        <h5 className="mb-4">이 사보 어떠셨나요?</h5>
+                        <RatingStars
+                            contentId={content.contentId}
+                            initialRating={content.userRating}
+                            initialAverageRating={content.averageRating}
+                            initialRatingCount={content.ratingCount}
+                        />
+                    </div>
+                    <div className="col-md-6 d-flex flex-column align-items-center justify-content-center pt-4 pt-md-0">
+                        <h5 className="mb-4">반응 남기기</h5>
+                        <ReactionButtons
+                            contentId={content.contentId}
+                            initialReactions={content.reactions}
+                            initialUserReaction={content.userReaction}
+                        />
+                    </div>
+                </div>
             </div>
 
         </Container>

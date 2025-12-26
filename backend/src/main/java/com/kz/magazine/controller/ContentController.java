@@ -53,7 +53,8 @@ public class ContentController {
 
         contentViewService.incrementViewCount(contentId, userId);
 
-        return ResponseEntity.ok(contentService.getContent(contentId));
+        return ResponseEntity
+                .ok(contentService.getContent(contentId, userDetails != null ? userDetails.getUsername() : null));
     }
 
     @PostMapping

@@ -24,8 +24,16 @@ public class ContentDetailResponseDto {
     private List<String> hashtags;
     private String youtubeUrl;
     private String instagramUrl;
+    private java.util.Map<String, Integer> reactions;
+    private String userReaction;
+    private Integer userRating;
 
     public static ContentDetailResponseDto from(Content content, List<String> hashtags) {
+        return from(content, hashtags, null, null, null);
+    }
+
+    public static ContentDetailResponseDto from(Content content, List<String> hashtags,
+            java.util.Map<String, Integer> reactions, String userReaction, Integer userRating) {
         return ContentDetailResponseDto.builder()
                 .contentId(content.getContentId())
                 .title(content.getTitle())
@@ -41,6 +49,9 @@ public class ContentDetailResponseDto {
                 .hashtags(hashtags)
                 .youtubeUrl(content.getYoutubeUrl())
                 .instagramUrl(content.getInstagramUrl())
+                .reactions(reactions)
+                .userReaction(userReaction)
+                .userRating(userRating)
                 .build();
     }
 }

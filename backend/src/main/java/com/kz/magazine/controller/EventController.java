@@ -26,8 +26,10 @@ public class EventController {
     private final EventService eventService;
 
     @GetMapping
-    public ResponseEntity<Page<Event>> getEvents(@PageableDefault(sort = "startAt") Pageable pageable) {
-        return ResponseEntity.ok(eventService.getEvents(pageable));
+    public ResponseEntity<Page<Event>> getEvents(
+            @RequestParam(required = false) String status,
+            @PageableDefault(sort = "startAt") Pageable pageable) {
+        return ResponseEntity.ok(eventService.getEvents(status, pageable));
     }
 
     @GetMapping("/{id}")
@@ -99,3 +101,4 @@ public class EventController {
         return ResponseEntity.ok(eventService.getWinners(id));
     }
 }
+// Touched for reload

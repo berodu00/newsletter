@@ -25,6 +25,12 @@ public interface ContentRepository extends JpaRepository<Content, Long> {
         Page<Content> findByStatusAndPublishedAtBeforeAndDeletedAtIsNull(
                         String status, LocalDateTime now, Pageable pageable);
 
+        // Find by status and youtube url is not null
+        Page<Content> findByStatusAndYoutubeUrlIsNotNullAndDeletedAtIsNull(String status, Pageable pageable);
+
+        // Find by status and instagram url is not null
+        Page<Content> findByStatusAndInstagramUrlIsNotNullAndDeletedAtIsNull(String status, Pageable pageable);
+
         // Increment view count
         @Modifying
         @Query("UPDATE Content c SET c.viewCount = c.viewCount + 1 WHERE c.contentId = :contentId")

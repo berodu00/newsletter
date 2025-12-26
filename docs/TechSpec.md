@@ -21,8 +21,8 @@
 
 ### 1.1 기본 정보
 - **프로젝트명**: 고려아연 전자사보 고도화 시스템
-- **버전**: v1.4
-- **작성일**: 2025-12-26 (Phase 2 Complete)
+- **버전**: v1.5
+- **작성일**: 2025-12-26 (Phase 3 Complete)
 - **DBMS**: PostgreSQL 15+ (Port: 5433)
 - **마이그레이션**: Flyway (필수)
 
@@ -240,6 +240,8 @@ CREATE TABLE contents (
   rating_count    BIGINT NOT NULL DEFAULT 0,
   rating_sum      BIGINT NOT NULL DEFAULT 0,
   average_rating  DECIMAL(3,2) NOT NULL DEFAULT 0.00,
+  youtube_url     VARCHAR(255),
+  instagram_url   VARCHAR(255),
   CONSTRAINT chk_status CHECK (status IN ('DRAFT', 'PUBLISHED', 'SCHEDULED', 'ARCHIVED'))
 );
 ```
@@ -345,29 +347,7 @@ CREATE INDEX idx_content_views_dedup_created ON content_views_dedup(created_at);
 DATE_TRUNC('hour', NOW()) + INTERVAL '30 minutes' * FLOOR(EXTRACT(MINUTE FROM NOW()) / 30)
 ```
 
-### 5.10 social_contents (SNS 컨텐츠)
-```sql
-CREATE TABLE social_contents (
-  social_content_id BIGSERIAL PRIMARY KEY,
-  platform          VARCHAR(20) NOT NULL,
-  external_id       VARCHAR(255) NOT NULL,
-  title             VARCHAR(255),
-  description       TEXT,
-  thumbnail_url     VARCHAR(500),
-  media_url         VARCHAR(500),
-  published_at      TIMESTAMP,
-  fetched_at        TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  is_active         BOOLEAN NOT NULL DEFAULT TRUE,
-  deleted_at        TIMESTAMP,
-  deleted_by        BIGINT REFERENCES users(user_id),
-  UNIQUE(platform, external_id),
-  CONSTRAINT chk_platform CHECK (platform IN ('YOUTUBE', 'INSTAGRAM'))
-);
 
-CREATE INDEX idx_social_contents_platform_pub 
-  ON social_contents(platform, published_at DESC) 
-  WHERE is_active = TRUE AND deleted_at IS NULL;
-```
 
 ### 5.11 events (이벤트)
 ```sql
@@ -748,55 +728,7 @@ OAuth 2.0 로그인
 
 ---
 
-### 6.4 소셜 컨텐츠 API
 
-#### GET /api/social/youtube
-유튜브 목록
-
-**Query Parameters**:
-- `page` (int, default: 0)
-- `size` (int, default: 12)
-
-**Response (200)**:
-```json
-{
-  "content": [
-    {
-      "socialContentId": 1,
-      "platform": "YOUTUBE",
-      "externalId": "string",
-      "title": "string",
-      "thumbnailUrl": "string",
-      "mediaUrl": "string",
-      "publishedAt": "2025-01-01T10:00:00"
-    }
-  ],
-  "totalElements": 0
-}
-```
-
-#### GET /api/social/instagram
-인스타그램 목록 (구조 동일)
-
-#### POST /api/social/sync
-SNS 동기화 (관리자 전용)
-
-**Response (200)**:
-```json
-{
-  "youtube": {
-    "newItems": 3,
-    "totalItems": 45
-  },
-  "instagram": {
-    "newItems": 5,
-    "totalItems": 120
-  },
-  "message": "동기화 완료"
-}
-```
-
----
 
 ### 6.5 이벤트 API
 

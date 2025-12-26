@@ -12,4 +12,6 @@ public class ContentFilterDto {
     private String hashtag;
     private String search;
     private String status = "PUBLISHED";
+    private Boolean hasYoutubeUrl;
+    private Boolean hasInstagramUrl;
 }
