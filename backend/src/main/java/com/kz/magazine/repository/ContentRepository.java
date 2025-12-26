@@ -12,24 +12,26 @@ import org.springframework.stereotype.Repository;
 import java.time.LocalDateTime;
 
 @Repository
-public interface ContentRepository extends JpaRepository<Content, Long> {
+public interface ContentRepository extends JpaRepository<Content, Long>, ContentRepositoryCustom {
 
         // Find published contents
-        Page<Content> findByStatusAndDeletedAtIsNull(String status, Pageable pageable);
+        Page<Content> findByStatusAndDeletedAtIsNull(com.kz.magazine.entity.ContentStatus status, Pageable pageable);
 
         // Find by category and status
         Page<Content> findByCategory_CategoryNameAndStatusAndDeletedAtIsNull(
-                        String categoryName, String status, Pageable pageable);
+                        String categoryName, com.kz.magazine.entity.ContentStatus status, Pageable pageable);
 
         // Find scheduled contents ready to publish
         Page<Content> findByStatusAndPublishedAtBeforeAndDeletedAtIsNull(
-                        String status, LocalDateTime now, Pageable pageable);
+                        com.kz.magazine.entity.ContentStatus status, LocalDateTime now, Pageable pageable);
 
         // Find by status and youtube url is not null
-        Page<Content> findByStatusAndYoutubeUrlIsNotNullAndDeletedAtIsNull(String status, Pageable pageable);
+        Page<Content> findByStatusAndYoutubeUrlIsNotNullAndDeletedAtIsNull(com.kz.magazine.entity.ContentStatus status,
+                        Pageable pageable);
 
         // Find by status and instagram url is not null
-        Page<Content> findByStatusAndInstagramUrlIsNotNullAndDeletedAtIsNull(String status, Pageable pageable);
+        Page<Content> findByStatusAndInstagramUrlIsNotNullAndDeletedAtIsNull(
+                        com.kz.magazine.entity.ContentStatus status, Pageable pageable);
 
         // Increment view count
         @Modifying
@@ -50,16 +52,6 @@ public interface ContentRepository extends JpaRepository<Content, Long> {
                         @Param("status") com.kz.magazine.entity.ContentStatus status);
 
         // Full-Text Search
-        @Query(value = "SELECT c.* FROM contents c " +
-                        "JOIN content_search cs ON c.content_id = cs.content_id " +
-                        "WHERE cs.search_vector @@ to_tsquery('simple', :keyword) " +
-                        "AND c.status = :status AND c.deleted_at IS NULL", countQuery = "SELECT count(*) FROM contents c "
-                                        +
-                                        "JOIN content_search cs ON c.content_id = cs.content_id " +
-                                        "WHERE cs.search_vector @@ to_tsquery('simple', :keyword) " +
-                                        "AND c.status = :status AND c.deleted_at IS NULL", nativeQuery = true)
-        Page<Content> searchContents(@Param("keyword") String keyword, @Param("status") String status,
-                        Pageable pageable);
 
         @Query("SELECT count(c), sum(c.viewCount) FROM Content c JOIN c.author u WHERE u.department = :department AND c.status = com.kz.magazine.entity.ContentStatus.PUBLISHED AND c.deletedAt IS NULL")
         Object[] getStatsByDepartment(@Param("department") String department);

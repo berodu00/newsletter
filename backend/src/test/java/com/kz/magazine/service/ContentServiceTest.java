@@ -33,80 +33,81 @@ import static org.mockito.BDDMockito.given;
 @ExtendWith(MockitoExtension.class)
 class ContentServiceTest {
 
-    @InjectMocks
-    private ContentService contentService;
+        @InjectMocks
+        private ContentService contentService;
 
-    @Mock
-    private ContentRepository contentRepository;
+        @Mock
+        private ContentRepository contentRepository;
 
-    @Mock
-    private UserRepository userRepository;
+        @Mock
+        private UserRepository userRepository;
 
-    @Mock
-    private ReactionRepository reactionRepository;
+        @Mock
+        private ReactionRepository reactionRepository;
 
-    @Mock
-    private ContentHashtagRepository contentHashtagRepository;
+        @Mock
+        private ContentHashtagRepository contentHashtagRepository;
 
-    @Test
-    @DisplayName("사보 목록 조회 성공")
-    void getContents_Success() {
-        // given
-        Category category = Category.builder().categoryName("General").build();
-        User author = User.builder().name("Author").build();
+        @Test
+        @DisplayName("사보 목록 조회 성공")
+        void getContents_Success() {
+                // given
+                Category category = Category.builder().categoryName("General").build();
+                User author = User.builder().name("Author").build();
 
-        Content content = Content.builder()
-                .contentId(1L)
-                .title("Test Content")
-                .status(ContentStatus.PUBLISHED)
-                .category(category)
-                .author(author)
-                .publishedAt(LocalDateTime.now())
-                .viewCount(0L)
-                .ratingCount(0L)
-                .build();
+                Content content = Content.builder()
+                                .contentId(1L)
+                                .title("Test Content")
+                                .status(ContentStatus.PUBLISHED)
+                                .category(category)
+                                .author(author)
+                                .publishedAt(LocalDateTime.now())
+                                .viewCount(0L)
+                                .ratingCount(0L)
+                                .build();
 
-        PageRequest pageRequest = PageRequest.of(0, 10);
+                PageRequest pageRequest = PageRequest.of(0, 10);
 
-        // Match string matcher for status
-        given(contentRepository.findByStatusAndDeletedAtIsNull(anyString(), any(Pageable.class)))
-                .willReturn(new PageImpl<>(List.of(content)));
+                // Match string matcher for status
+                given(contentRepository.findByStatusAndDeletedAtIsNull(any(ContentStatus.class), any(Pageable.class)))
+                                .willReturn(new PageImpl<>(List.of(content)));
 
-        // when
-        Page<ContentResponseDto> result = contentService.getContents(new com.kz.magazine.dto.content.ContentFilterDto(),
-                pageRequest);
+                // when
+                Page<ContentResponseDto> result = contentService.getContents(
+                                new com.kz.magazine.dto.content.ContentFilterDto(),
+                                pageRequest);
 
-        // then
-        assertThat(result.getContent()).hasSize(1);
-        assertThat(result.getContent().get(0).getTitle()).isEqualTo("Test Content");
-    }
+                // then
+                assertThat(result.getContent()).hasSize(1);
+                assertThat(result.getContent().get(0).getTitle()).isEqualTo("Test Content");
+        }
 
-    @Test
-    @DisplayName("사보 상세 조회 성공")
-    void getContent_Success() {
-        // given
-        Category category = Category.builder().categoryName("General").build();
-        User author = User.builder().name("Author").build();
+        @Test
+        @DisplayName("사보 상세 조회 성공")
+        void getContent_Success() {
+                // given
+                Category category = Category.builder().categoryName("General").build();
+                User author = User.builder().name("Author").build();
 
-        Content content = Content.builder()
-                .contentId(1L)
-                .title("Detail")
-                .viewCount(0L)
-                .ratingCount(0L)
-                .status(ContentStatus.PUBLISHED)
-                .category(category)
-                .author(author)
-                .publishedAt(LocalDateTime.now())
-                .build();
+                Content content = Content.builder()
+                                .contentId(1L)
+                                .title("Detail")
+                                .viewCount(0L)
+                                .ratingCount(0L)
+                                .status(ContentStatus.PUBLISHED)
+                                .category(category)
+                                .author(author)
+                                .publishedAt(LocalDateTime.now())
+                                .build();
 
-        given(contentRepository.findById(1L)).willReturn(Optional.of(content));
-        given(contentHashtagRepository.findHashtagNamesByContentId(1L)).willReturn(List.of());
-        given(reactionRepository.findByContent_ContentId(1L)).willReturn(List.of());
+                given(contentRepository.findById(1L)).willReturn(Optional.of(content));
+                given(contentHashtagRepository.findHashtagNamesByContentId(1L)).willReturn(List.of());
+                given(reactionRepository.findByContent_ContentId(1L)).willReturn(List.of());
 
-        // when
-        ContentDetailResponseDto result = contentService.getContent(1L, "user");
+                // when
+                ContentDetailResponseDto result = contentService.getContent(1L, "user");
 
-        // then
-        assertThat(result.getTitle()).isEqualTo("Detail");
-    }
+                // then
+                assertThat(result.getTitle()).isEqualTo("Detail");
+        }
 }

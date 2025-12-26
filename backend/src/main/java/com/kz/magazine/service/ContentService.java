@@ -48,6 +48,8 @@ public class ContentService {
         Page<Content> contents;
 
         // Simple filtering strategy
+        ContentStatus statusEnum = ContentStatus.valueOf(filter.getStatus());
+
         if (filter.getQ() != null && !filter.getQ().trim().isEmpty()) {
             // Full-text search
             // Prepare keyword: standard to_tsquery format (e.g., 'word1 | word2' or 'word1
@@ -57,15 +59,15 @@ public class ContentService {
             contents = contentRepository.searchContents(keyword, filter.getStatus(), pageable);
         } else if (filter.getCategory() != null && !filter.getCategory().isEmpty()) {
             contents = contentRepository.findByCategory_CategoryNameAndStatusAndDeletedAtIsNull(
-                    filter.getCategory(), filter.getStatus(), pageable);
+                    filter.getCategory(), statusEnum, pageable);
         } else if (Boolean.TRUE.equals(filter.getHasYoutubeUrl())) {
-            contents = contentRepository.findByStatusAndYoutubeUrlIsNotNullAndDeletedAtIsNull(filter.getStatus(),
+            contents = contentRepository.findByStatusAndYoutubeUrlIsNotNullAndDeletedAtIsNull(statusEnum,
                     pageable);
         } else if (Boolean.TRUE.equals(filter.getHasInstagramUrl())) {
-            contents = contentRepository.findByStatusAndInstagramUrlIsNotNullAndDeletedAtIsNull(filter.getStatus(),
+            contents = contentRepository.findByStatusAndInstagramUrlIsNotNullAndDeletedAtIsNull(statusEnum,
                     pageable);
         } else {
-            contents = contentRepository.findByStatusAndDeletedAtIsNull(filter.getStatus(), pageable);
+            contents = contentRepository.findByStatusAndDeletedAtIsNull(statusEnum, pageable);
         }
 
         return contents.map(ContentResponseDto::from);

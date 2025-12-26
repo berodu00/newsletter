@@ -37,5 +37,7 @@ public class User extends BaseEntity {
     @Column(nullable = false)
     private boolean isActive = true;
 
+    private java.time.LocalDateTime deletedAt;
+
     // TODO: Add constructor
 }
